@@ -1,5 +1,5 @@
 ---
-layout: team-member
+layout: default
 name: Ava Pipitone
 position: Executive Director
 email: ava@bmoretransalliance.com
