@@ -1,0 +1,67 @@
+---
+layout: page
+title: Team
+permalink: /team/
+---
+
+<h1 class="page-title"> {{ page.title | escape }}</h1>
+
+<h2> Structure </h2>
+We are a parallel platform of leaders from other transgender led projects. We operate on consensus and understand that we must not replicate the systems of marginalization that we seek to oppose. We function, in part, as a project that can be used by all as an organizing tool to energize other projects. But also as an incubator for anything that improves the lives of Baltimore's transgender population.
+Come talk with us about how we can work together to empower our community!
+
+<h2>Our Leadership Team</h2>
+{% for team_member in site.team_members %}
+		<div class="my-team-member row my-bg darken-2">
+			<div class="my-avatar-container col xl2 l2 m2 s2">
+				<img class="my-avatar" src="/assets/images/team-members/{{ team_member.shortname }}.jpg">
+			</div>
+			<div class="my-content col xl10 l10 m10 s10">
+				<div class="my-header"><h5>{{ team_member.name }}</h5></div>
+				<div class="my-position"><h6><i class="mdi mdi-account"></i> {{ team_member.position }}</h6></div>
+				<div class="my-pronouns"><h6><i class="mdi mdi-message"></i> {{ team_member.pronouns }}</h6></div>
+				<hr>
+				<div class="my-description">{{ team_member.content }}</div>
+				<hr>
+				<div class="my-email"><h6><i class="mdi mdi-email"></i> {{ team_member.email }}</h6></div>
+				<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ team_member.phone }}</h6></div>
+			</div>
+			<!-- <div class="my-info col xl4 l4 m4 s4">
+				<ul>
+					<li><i class="mdi mdi-18px mdi-email"></i> {{ team_member.email }}</li>
+					<li>Pronouns: {{ team_member.pronouns }}</li>
+				</ul>
+			</div> -->
+		</div>
+		<!-- <div class="card">
+			<div class="card-image"><img src="/assets/images/team-members/{{ team_member.shortname }}.jpg"></div>
+			<div class="card-content">
+				<span class="card-title">{{ team_member.name }}</span>
+				<h6>{{ team_member.position }}</h6>
+			</div>
+		</div>
+		</div> -->
+{% endfor %}
+</div>
+
+<h2> Member Organizations </h2>
+<ul class="collection">
+	{% for member_org in site.member_organizations %}
+		<li class="collection-item avatar">
+			<span class="title">{{ member_org.name | escape }}</span>
+			<p>{{ member_org.content }}</p>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2> Other Partners </h2>
+
+<h6> Hearts and Ears </h6>
+<p>
+	Peer run drop-in center and advocacy organization dealing with the LGBT community and mental health
+</p>
+
+<h6> Black Trans Advocacy </h6>
+<p>
+	National organization for the empowerment and advocacy of black trans and gender non-conforming folks.
+</p>

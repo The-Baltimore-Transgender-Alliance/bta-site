@@ -1,0 +1,26 @@
+title: The Baltimore Transgender Alliance
+author: Evan Lori Mahone
+email: evan@bmoretransalliance.com
+description: > # this means to ignore newlines until "baseurl:"
+  A Site Starter Materialize Templates for Jekyll
+
+twitter_url: https://twitter.com/alliancebmore
+
+twitter_username: alliancebmore
+github_username:  apathinwalking
+
+collections:
+  team_members:
+    name: First Last
+    position: example position
+    email: example@example.com
+    phone: 555-555-5555
+    pronouns: they/them/theirs
+    shortname: name
+  member_organizations:
+    name: Org name
+    website: www.example.com
+    facebook: www.facebook.com/example
+    shortname: name
+sass:
+    style: compressed

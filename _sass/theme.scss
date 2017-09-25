@@ -1,0 +1,31 @@
+.my-team-member .my-avatar-container .my-avatar {
+    // position: absolute;
+    // width: 100px;
+    // height: 100px;
+    max-width:100%;
+    max-height:100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // overflow: hidden;
+    // left: 15px;
+    // display: inline-block;
+    // vertical-align: middle;
+    border-radius: 50%;
+}
+
+.my-team-member .my-avatar-container {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  padding-right: 10.5px;
+}
+
+.my-team-member .my-content hr{
+  border-style: solid;
+  color: darken(#f2f1f4, 20%);
+  border-width:.5px;
+}
+
+.collection .collection-item.avatar .title {
+    font-size: 16px;
+}
