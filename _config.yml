@@ -24,3 +24,5 @@ collections:
     shortname: name
 sass:
     style: compressed
+
+theme: jekyll-theme-slate
