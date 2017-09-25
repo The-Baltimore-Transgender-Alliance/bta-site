@@ -8,4 +8,4 @@ pronouns: She/her/hers
 shortname: ava
 ---
 
-Ava Pipitone is Executive Director of The Baltimore Transgender Alliance and a worker-owner at Red Emma’s Bookstore and Coffeehouse. She  likes long walks on the beach and puppies.
+Ava Pipitone is the Executive Director of the Baltimore Transgender Alliance, a worker-owner at Red Emma's Bookstore and Coffeehouse, and a Co-founder of HostHome Inc. She brings experiences in building horizontal systems demonstrated through Red Emma's and applies them to the BTA to intervene in structures of marginalization. Functioning as a collective of transgender parents, business owners, artists, and activists, the BTA lifts up the voices of Baltimore's transgender and gender non-conforming communities and continually centers the conversation on those most marginalized; black transwomen. The BTA is one of the only peer run transgender advocacy organization in Baltimore.
