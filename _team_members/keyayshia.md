@@ -8,4 +8,4 @@ pronouns: She/her/hers
 shortname: keyayshia
 ---
 
-Key'Ayshia is a fun person. She coordinates events like the queer love cookout. She founded the support group TransBaltimore and TransYnc Inc.
+Newly certified medical technician, trans activist founder of TransBaltimore, Prep Peer navigator for REACH, and newest BTA speaker/activist event coordinator.
