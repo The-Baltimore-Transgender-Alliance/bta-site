@@ -26,25 +26,24 @@ Come talk with us about how we can work together to empower our community!
 				<div class="my-email"><h6><i class="mdi mdi-email"></i> {{ team_member.email }}</h6></div>
 				<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ team_member.phone }}</h6></div>
 			</div>
-			<!-- <div class="my-info col xl4 l4 m4 s4">
-				<ul>
-					<li><i class="mdi mdi-18px mdi-email"></i> {{ team_member.email }}</li>
-					<li>Pronouns: {{ team_member.pronouns }}</li>
-				</ul>
-			</div> -->
 		</div>
-		<!-- <div class="card">
-			<div class="card-image"><img src="/assets/images/team-members/{{ team_member.shortname }}.jpg"></div>
-			<div class="card-content">
-				<span class="card-title">{{ team_member.name }}</span>
-				<h6>{{ team_member.position }}</h6>
+{% endfor %}
+
+<h2>Member Organizations</h2>
+{% for member_org in site.member_organizations %}
+		<div class="my-team-member row my-bg darken-2">
+			<div class="my-avatar-container col xl2 l2 m2 s2">
+				<!-- <img class="my-avatar" src="/assets/images/team-members/{{ team_member.shortname }}.jpg"> -->
+			</div>
+			<div class="my-content col xl10 l10 m10 s10">
+				<div class="my-header"><h5>{{ member_org.name }}</h5></div>
+				<hr>
+				<div class="my-description">{{ member_org.content }}</div>
 			</div>
 		</div>
-		</div> -->
 {% endfor %}
-</div>
 
-<h2> Member Organizations </h2>
+<!-- <h2> Member Organizations </h2>
 <ul class="collection">
 	{% for member_org in site.member_organizations %}
 		<li class="collection-item avatar">
@@ -52,7 +51,7 @@ Come talk with us about how we can work together to empower our community!
 			<p>{{ member_org.content }}</p>
 		</li>
 	{% endfor %}
-</ul>
+</ul> -->
 
 <h2> Other Partners </h2>
 
