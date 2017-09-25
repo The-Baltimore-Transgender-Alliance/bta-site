@@ -4,7 +4,7 @@ name: Cola Anderson
 position: Photographer
 email: cola@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: she/her/goddess
+pronouns: She/her/goddess
 shortname: cola
 ---
 

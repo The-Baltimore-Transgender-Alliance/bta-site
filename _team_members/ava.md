@@ -4,7 +4,7 @@ name: Ava Pipitone
 position: Executive Director
 email: ava@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: she/her/hers
+pronouns: She/her/hers
 shortname: ava
 ---
 

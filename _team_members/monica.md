@@ -4,7 +4,7 @@ name: Monica Stevens
 position: Outreach Coordinator
 email: monica@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: she/her/hers
+pronouns: She/her/hers
 shortname: monica
 ---
 

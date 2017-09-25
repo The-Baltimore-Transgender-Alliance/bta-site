@@ -4,7 +4,7 @@ name: Key'Ayshia Tucker
 position: Event Coordinator
 email: keyayshia@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: she/her/hers
+pronouns: She/her/hers
 shortname: keyayshia
 ---
 

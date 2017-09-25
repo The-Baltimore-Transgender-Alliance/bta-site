@@ -4,7 +4,7 @@ name: Ken Jiretsu
 position: Peer Support
 email: ken@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: he/him/his
+pronouns: He/him/his
 shortname: ken
 ---
 

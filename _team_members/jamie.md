@@ -4,7 +4,7 @@ name: Jamie Alexander
 position: Writer/ Poet
 email: jamie.grace@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: she/her/hers & they/them/theirs
+pronouns: She/her/hers & They/them/theirs
 shortname: jamie
 ---
 

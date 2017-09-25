@@ -4,7 +4,7 @@ name: Samy El-noury
 position: Speaker
 email: samy@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: he/him/his
+pronouns: He/him/his
 shortname: samy
 ---
 

@@ -4,7 +4,7 @@ name: Evan Lori Mahone
 position: Media Specialist
 email: evan@bmoretransalliance.com
 phone: 555-555-5555
-pronouns: she/her/hers & they/them/theirs
+pronouns: She/her/hers & They/them/theirs
 shortname: evan
 ---
 
