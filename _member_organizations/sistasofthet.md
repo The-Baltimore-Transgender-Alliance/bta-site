@@ -1,6 +1,7 @@
 ---
 layout: default
 name: Sistas of the "t"
+facebook: www.facebook.com/SistasOfThet/
 shortname: sistasofthet
 ---
 

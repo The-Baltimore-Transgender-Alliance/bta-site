@@ -22,6 +22,7 @@ collections:
     website: www.example.com
     facebook: www.facebook.com/example
     shortname: name
+    email: example@example.com
 sass:
     style: compressed
 

@@ -23,7 +23,9 @@ Come talk with us about how we can work together to empower our community!
 				<hr>
 				<div class="my-description">{{ team_member.content }}</div>
 				<hr>
-				<div class="my-email"><h6><i class="mdi mdi-email"></i> {{ team_member.email }}</h6></div>
+				<div class="my-email">
+				  <h6><i class="mdi mdi-email"></i> <a href="mailto:{{ team_member.email }}"> {{ team_member.email }}</a></h6>
+			  </div>
 				<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ team_member.phone }}</h6></div>
 			</div>
 		</div>
@@ -39,7 +41,18 @@ Come talk with us about how we can work together to empower our community!
 				<div class="my-header"><h5>{{ member_org.name }}</h5></div>
 				<hr>
 				<div class="my-description">{{ member_org.content }}</div>
-			</div>
+				<hr>
+				{% if member_org.facebook != null %}
+				<div class="my-facebook">
+				  <i class="mdi mdi-facebook-box"></i><a href="{{ member_org.facebook }}"> {{ member_org.facebook }}</a>
+			  </div>
+				{% endif %}
+				{% if member_org.email != null %}
+				<div class="my-facebook">
+				  <i class="mdi mdi-email"></i><a href="mailto:{{ member_org.email }}"> {{ member_org.email }}</a>
+			  </div>
+				{% endif %}
+			 </div>
 		</div>
 {% endfor %}
 

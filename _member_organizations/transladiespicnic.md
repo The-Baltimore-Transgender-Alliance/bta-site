@@ -2,6 +2,7 @@
 layout: default
 name: Baltimore Trans Ladies' Picnic
 facebook: www.facebook.com/bmoretlp
+email: transladiespicnic@bmoretransalliance.com
 shortname: transladiespicnic
 ---
 
