@@ -12,10 +12,8 @@
   padding-right: 10.5px;
 }
 
-.my-member .my-content hr{
-  border-style: solid;
-  color: darken(#f2f1f4, 20%);
-  border-width:.5px;
+.my-member .my-content .divider{
+  background-color: darken(#f2f1f4, 20%) !important;
 }
 
 .my-team-member .my-avatar-container .my-avatar {

@@ -18,15 +18,18 @@ Come talk with us about how we can work together to empower our community!
 			</div>
 			<div class="my-content col xl10 l10 m10 s8">
 				<div class="my-header"><h5>{{ team_member.name }}</h5></div>
-				<div class="my-position"><h6><i class="mdi mdi-account"></i> {{ team_member.position }}</h6></div>
-				<div class="my-pronouns"><h6><i class="mdi mdi-message"></i> {{ team_member.pronouns }}</h6></div>
-				<hr>
+				<div class="row">
+				  <div class="col xl6 l6 m6 s6">
+    				<span class="my-position"><h6 class="left-align"><i class="mdi mdi-account"></i> {{ team_member.position }}</h6></span>
+    				<span class="my-pronouns"><h6 class="left-align"><i class="mdi mdi-message"></i> {{ team_member.pronouns }}</h6></span>
+				  </div>
+				  <div class="col xl6 l6 m6 s6">
+				    <div class="my-phone"><h6 class="right-align"><i class="mdi mdi-phone"></i> {{ team_member.phone }}</h6></div>
+    				<div class="my-email"><h6 class="right-align"><i class="mdi mdi-email"></i> <a href="mailto:{{ team_member.email }}"> {{ team_member.email }}</a></h6></div>
+				  </div>
+				</div>
+				<div class="divider"></div>
 				<div class="my-description">{{ team_member.content }}</div>
-				<hr>
-				<div class="my-email">
-				  <h6><i class="mdi mdi-email"></i> <a href="mailto:{{ team_member.email }}"> {{ team_member.email }}</a></h6>
-			  </div>
-				<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ team_member.phone }}</h6></div>
 			</div>
 		</div>
 {% endfor %}
