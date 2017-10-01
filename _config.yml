@@ -23,5 +23,8 @@ collections:
     facebook: www.facebook.com/example
     shortname: name
     email: example@example.com
+  projects:
+    name: Example
+    email: example@example.com
 sass:
     style: compressed

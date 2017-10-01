@@ -5,16 +5,13 @@ layout: default
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">{{ site.title }}</h1>
+      <div class="my-home-logo-container center">
+          <img class="my-home-logo" src="/assets/images/logo.svg"/>
+      </div>
+      <!-- <h1 class="header center orange-text">{{ site.title }}</h1> -->
       <div class="row center">
         <h5 class="header col s12 light">{{ content }}</h5>
       </div>
-
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-
     </div>
   </div>
 
@@ -25,33 +22,58 @@ layout: default
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi mdi-facebook-box"></i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center my-light-pink-text">UNIFY</h2>
+            <h5 class="center my-light-blue-text">We must come together in Unity</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">...if we want to that we can heal together collectively. We must bridge our divides of ability, race, class, language, and identity such that we can truly build our communities with comprehensive solidarity. Our diversity makes us powerful.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center my-light-pink-text">RECLAIM</h2>
+            <h5 class="center my-light-blue-text">We must Reclaim our stories</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">...and overwhelm the mainstream with accounts of trans experience, beauty, and power. --writing, speaking, and shouting our own stories we can portray ourselves with the complexity we deserve as fully realized human beings. We must teach others to see, not just to see our gender, but also our humanity.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center my-light-pink-text">EMPOWER</h2>
+            <h5 class="center my-light-blue-text">We must empower ourselves</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">We can build support and family networks that allow us to have a self maintaining community. We can help each other --we can help ourselves! We house, educate, and support one another as we give power to the new generation. Our movement is getting younger and more radical and still we are interfacing with power brokers in our city. We are becoming those power brokers. Our conscience in sharing that power with each other is lethal to the forces that make our lives more difficult.</p>
           </div>
         </div>
       </div>
-
     </div>
+
+    <!-- <div class="section">
+        <div class="row">
+              <div class="carousel carousel-slider center" data-indicators="true" data-namespace="DIVcarouselcarousel-slider1" style="height: 400px;">
+              <div class="carousel-fixed-item center with-indicators">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+              </div>
+              <div class="carousel-item my-light-pink white-text active" href="#one!" style="z-index: 0; opacity: 1; display: block; transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px);">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+              </div>
+              <div class="carousel-item my-light-blue white-text" href="#two!" style="transform: translateX(0px) translateX(953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+              </div>
+              <div class="carousel-item my-black white-text" href="#three!" style="transform: translateX(0px) translateX(-1907.81px) translateZ(0px); z-index: -2; opacity: 1; display: block;">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+              </div>
+              <div class="carousel-item my-light-purple white-text" href="#four!" style="transform: translateX(0px) translateX(-953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+            <ul class="indicators"><li class="indicator-item active"></li><li class="indicator-item"></li><li class="indicator-item"></li><li class="indicator-item"></li></ul></div>
+        </div>
+    </div> -->
 
     </div>
     <div style="background: #ddd">
@@ -67,7 +89,7 @@ layout: default
           <p>
              {{ post.content | truncatewords: 10 }}
           </p>
-          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="mdi mdi-chevron-right mdi-24px"></i></a>
         </li>
         {% endfor %}
         </ul>
