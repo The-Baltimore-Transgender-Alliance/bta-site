@@ -1,0 +1,44 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<!-- <h1 class="page-title"> {{ page.title | escape }}</h1> -->
+
+<div class="my-blog-container row">
+	<div class="my-blog-posts col sm12 m9 l9 xl9">
+		<h1 class="page-title center">{{ page.title }}</h1>
+		<div class="my-blog-posts-container row">
+
+			{% for post in site.posts %}
+			{% assign date_format = site.minima.date_format | default: "%m/%d" %}
+			<div class="my-blog-post col s12 m6 l6 xl6">
+				<div class="card my-light-blue lighten-4">
+					<div class="card-content white-text">
+						<span class="card-title my-blue-text">{{ post.title }}</span>
+						<div class="date-post">{{ post.date | date: date_format }}</div>
+						<p>{{ post.content | truncatewords: 10 }}</p>
+					</div>
+					<div class="card-action">
+						<a href="{{ post.url | relative_url }}" class="my-black-text lighten-4">Read More...<i class="mdi mdi-chevron-right"></i></a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+	<div class="my-blog-sidebar col sm12 m3 l3 xl3">
+		<h1 class="my-sidebar-title page-title center">Categories</h1>
+		<div class="row">
+			<div class="col s12 my-bg lighten-4">
+				<ul class="center">
+					<li>Category 1.</li>
+					<li>Category 2.</li>
+					<li>Category 3.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
