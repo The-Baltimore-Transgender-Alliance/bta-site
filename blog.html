@@ -16,7 +16,7 @@ permalink: /blog/
 			<div class="my-blog-post col s12 m6 l6 xl6">
 				<div class="card my-light-blue lighten-4">
 					<div class="card-content white-text">
-						<span class="card-title my-blue-text">{{ post.title }}</span>
+						<span class="card-title my-blue-text truncate">{{ post.title }}</span>
 						<div class="date-post">{{ post.date | date: date_format }}</div>
 						<p>{{ post.content | truncatewords: 10 }}</p>
 					</div>
@@ -33,11 +33,11 @@ permalink: /blog/
 		<h1 class="my-sidebar-title page-title center">Categories</h1>
 		<div class="row">
 			<div class="col s12 my-bg lighten-4">
-				<ul class="center">
-					<li>Category 1.</li>
-					<li>Category 2.</li>
-					<li>Category 3.</li>
-				</ul>
+				{% for category in site.data.categories %}
+					<div class="chip">
+						<a href="#">{{ category.name }}</a>
+					</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>

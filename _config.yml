@@ -10,13 +10,6 @@ twitter_username: alliancebmore
 github_username:  apathinwalking
 
 collections:
-  team_members:
-    name: First Last
-    position: example position
-    email: example@example.com
-    phone: 555-555-5555
-    pronouns: they/them/theirs
-    shortname: name
   member_organizations:
     name: Org name
     website: www.example.com
