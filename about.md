@@ -26,5 +26,3 @@ We must empower ourselves. We can build support and family networks that allow u
 We are a parallel platform of leaders from other transgender led projects. We operate on consensus and understand that we must not replicate the systems of marginalization that we seek to oppose. We function, in part, as a project that can be used by all as an organizing tool to energize other projects. But also as an incubator for anything that improves the lives of Baltimore's transgender population.
 
 Come talk with us about how we can work together to empower our community!
-
-<p>{{ site.tags }}</p>

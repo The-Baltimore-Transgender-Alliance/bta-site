@@ -20,3 +20,6 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
 [1]: https://github.com/jekyll/minima
 [2]: https://opensource.org/licenses/MIT
 [3]: http://materializecss.com/
+
+# Deployment Stuff
+Followed this readme for heroku [link][http://blog.gnclmorais.com/jekyll-heroku-the-simple-way]
