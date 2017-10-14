@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "This post demonstrates post content styles"
-categories: junk
-author: "Bart Simpson"
-meta: "Springfield"
+author: ava
+tags: [jekyll, markdown]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
@@ -38,11 +37,11 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
 
 ```html
 <html>
-  <head>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
+	<head>
+	</head>
+	<body>
+		<p>Hello, World!</p>
+	</body>
 </html>
 ```
 

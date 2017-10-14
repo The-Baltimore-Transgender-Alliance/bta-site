@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: person
 shortname: jamie
-name: Jamie Alexander
+name: Jamie Grace Alexander
 position: Writer/ Poet
 email: jamie.grace@bmoretransalliance.com
 phone: 555-555-5555

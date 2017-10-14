@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: ava
 name: Ava Pipitone
 position: Executive Director

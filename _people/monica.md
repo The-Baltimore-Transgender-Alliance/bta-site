@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: monica
 name: Monica Stevens
 position: Outreach Coordinator

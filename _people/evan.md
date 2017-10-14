@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: evan
 name: Evan Lori Mahone
 position: Media Specialist

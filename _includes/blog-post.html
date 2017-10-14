@@ -1,0 +1,20 @@
+{% assign date_format = site.minima.date_format | default: "%m/%d" %}
+{% assign author = site.people | where_exp:"person", "person.shortname == include.post.author" | first %}
+
+<div class="card my-light-pink lighten-5">
+	<div class="card-content">
+		<span class="card-title my-pink-text darken-4">{{ include.post.title }}</span>
+		<i class="mdi mdi-account"></i><a href="{{author.url}}">{{ author.name }}</a>
+		<div class="date-post">{{ include.date | date: date_format }}</div>
+		<i class="mdi mdi-tag"></i>
+		{% for tag in include.post.tags %}
+			<a href="/blog/tags/#{{ tag }}">{{ tag }}</a>,
+		{% endfor %}
+		<p>{{ include.post.content | truncatewords: 30 }}</p>
+	</div>
+	<div class="card-action">
+		<a href="{{ include.post.url | relative_url }}" class="{{ include.post.action_text_color | default: 'my-pink-text' }}">
+			Read More...<i class="mdi mdi-chevron-right"></i>
+		</a>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: keyayshia
 name: Key'Ayshia Tucker
 position: Event Coordinator

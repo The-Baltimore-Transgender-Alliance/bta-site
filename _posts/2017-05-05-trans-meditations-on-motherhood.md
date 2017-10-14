@@ -1,5 +1,7 @@
 ---
 layout: post
+author: jamie
+tags: [writings, family, community]
 ---
 
 Yesterday was Mother’s day & it will come as no surprise that I, like many other trans women, have complex feelings about motherhood. — Yes, I can be a woman in so many ways, but on some level I know that my femininity will always be undermined because of my inability to bear children.

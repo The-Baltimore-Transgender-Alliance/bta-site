@@ -9,26 +9,38 @@ twitter_url: https://twitter.com/alliancebmore
 twitter_username: alliancebmore
 github_username:  apathinwalking
 
+header_pages:
+ - index.md
+ - about.md
+ - team.html
+ - projects.html
+ - blog.html
+
+donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
+
+blog_tags_to_display: 5
+blog_authors_to_display: 5
+
 collections:
   people:
-    output: true
-    permalink: /:collection/:name
-    shortname: name
-    name: First Last
-    position: Example Position
-    email: example@bmoretransalliance.com
-    phone: 555-555-5555
-    pronouns: They/Them/Theirs
+   output: true
+   permalink: /:collection/:name
+   shortname: name
+   name: First Last
+   position: Example Position
+   email: example@bmoretransalliance.com
+   phone: 555-555-5555
+   pronouns: They/Them/Theirs
   orgs:
-    output: true
-    permalink: /:collection/:name
-    name: Org name
-    shortname: name
-    website: www.example.com
-    facebook: www.facebook.com/example
-    email: example@example.com
+   output: true
+   permalink: /:collection/:name
+   name: Org name
+   shortname: name
+   website: www.example.com
+   facebook: www.facebook.com/example
+   email: example@example.com
   projects:
-    name: Example
-    email: example@example.com
+   name: Example
+   email: example@example.com
 sass:
-    style: compressed
+  style: compressed

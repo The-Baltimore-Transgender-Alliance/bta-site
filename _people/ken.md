@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: ken
 name: Ken Jiretsu
 position: Peer Support

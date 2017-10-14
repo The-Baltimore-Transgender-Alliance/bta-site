@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: samy
 name: Samy El-noury
 position: Speaker

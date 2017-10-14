@@ -1,0 +1,12 @@
+<div class="section">
+	<h4>Posts by Authors</h4>
+	<ul>
+		{% for person in site.people %}
+			<li><a href="/blog/#{{ person.shortname }}">{{ person.name }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+<div class="divider"></div>
+<div class="section">
+	<h4>Posts by Tags</h4>
+</div>

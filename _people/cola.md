@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: person
 shortname: cola
 name: Cola Anderson
 position: Photographer
