@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
+{% include top-nav.html title=page.name %}
 <div class="container">
 	{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
 	<div class="section">
-		<h1 class="page-title center">{{ page.name }}</h1>
 		{{ content }}
 	</div>
-    {% if posts_by_author.size >= 1 %}
+	{% if posts_by_author.size >= 1 %}
 	<h5>Latest Posts by {{ page.name }}</h5>
 	<div class="last-post">
 		{% include latest-posts.html posts=posts_by_author %}
 	</div>
-    {% endif %}
+	{% endif %}
 </div>
