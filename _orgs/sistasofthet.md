@@ -3,6 +3,7 @@ layout: default
 name: Sistas of the "t"
 facebook: www.facebook.com/SistasOfThet/
 shortname: sistasofthet
+member_org: YES
 ---
 
 Sistas of the “t” is an independent network made up of transgender women who believe that

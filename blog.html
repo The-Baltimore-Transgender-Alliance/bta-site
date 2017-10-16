@@ -3,10 +3,7 @@ layout: page
 title: Blog
 permalink: /blog/
 ---
-{% comment %} Collecting Posts by Authors {% endcomment %}
 {% assign posts_by_author = site.posts | group_by:"author" %}
-
-<h1 class="page-title center">{{ page.title }}</h1>
 
 <div class="row">
 	<div class="my-blog-container col s12 m9 l9 xl9">
@@ -17,25 +14,4 @@ permalink: /blog/
 	<div class="my-blog-sidebar col s12 m3 l3 xl3">
 		{% include blog-sidebar.html %}
 	</div>
-</div>
-{% comment %} The actual HTML {% endcomment %}
-
-	<!-- <div class="my-blog-sidebar col sm12 m3 l3 xl3">
-		<div class="col s12 my-bg lighten-4">
-			<h4>Posts by Tag</h4>
-			<div class="divider"></div>
-			<div class="section">
-			<ul>
-			{% for tag in tags %}
-				   <li><a href="/blog/tags#{{ tag | slugify }}"> {{ tag }} </a></li>
-			{% endfor %}
-			</ul>
-
-			</div>
-			<div class="divider"></div>
-			<a href="/blog/tags">Posts by Tags</a>
-			<a href="/blog/authors">Posts by Authors</a>
-		</div>
-	</div> -->
-
 </div>
