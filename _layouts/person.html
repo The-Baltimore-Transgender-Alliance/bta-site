@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
-  <body class="my-bg">
-    {% include header.html %}
-
-
-    <div class="container">
-        {% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
-        <div class="section">
-            <h1 class="page-title center">{{ page.name }}</h1>
-            {{ content }}
-
-            {% for post in posts_by_author %}
-                <div><a href="{{post.url}}">{{post.title}}</a></div>
-            {% endfor %}
-        </div>
-    </div>
-
-
-    {% include footer.html %}
-    {% include script.html %}
-  </body>
-</html>
+---
+layout: default
+---
+<div class="container">
+	{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
+	<div class="section">
+		<h1 class="page-title center">{{ page.name }}</h1>
+		{{ content }}
+	</div>
+    {% if posts_by_author.size >= 1 %}
+	<h5>Latest Posts by {{ page.name }}</h5>
+	<div class="last-post">
+		{% include latest-posts.html posts=posts_by_author %}
+	</div>
+    {% endif %}
+</div>

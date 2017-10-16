@@ -9,12 +9,12 @@ permalink: /blog/
 <h1 class="page-title center">{{ page.title }}</h1>
 
 <div class="row">
-	<div class="my-blog-container col s12 m8 l8 xl8">
+	<div class="my-blog-container col s12 m9 l9 xl9">
 		{% for post in site.posts %}
 			{% include blog-post.html post=post %}
 		{% endfor %}
 	</div>
-	<div class="my-blog-sidebar col s12 m4 l4 xl84">
+	<div class="my-blog-sidebar col s12 m3 l3 xl3">
 		{% include blog-sidebar.html %}
 	</div>
 </div>

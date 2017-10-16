@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ken
+author: evan
 tags: jekyll liquid lorem ipsum
 ---
 
