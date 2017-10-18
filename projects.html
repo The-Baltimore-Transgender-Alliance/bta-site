@@ -3,20 +3,22 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-{% for project in site.projects %}
-	<div class="my-member my-project row my-bg darken-1 row">
-		<div class="my-content col">
-			<div class="my-header"><h5>{{ project.name }}</h5></div>
-			<div class="divider"></div>
-			<div class="my-description">{{ project.content }}</div>
-			{% if project.email != null %}
-			<div class="divider"></div>
-			{% endif %}
-			{% if project.email != null %}
-			<div class="my-info">
-				<div class="my-email"><b>For more info contact:</b><a href="mailto:{{ project.email }}"> {{ project.email }}</a></div>
+<div class="section">
+	{% for project in site.projects %}
+		<div class="my-member my-project row my-bg darken-1 row">
+			<div class="my-content col">
+				<div class="my-header"><h5>{{ project.name }}</h5></div>
+				<div class="divider"></div>
+				<div class="my-description">{{ project.content }}</div>
+				{% if project.email != null %}
+				<div class="divider"></div>
+				{% endif %}
+				{% if project.email != null %}
+				<div class="my-info">
+					<div class="my-email"><b>For more info contact:</b><a href="mailto:{{ project.email }}"> {{ project.email }}</a></div>
+				</div>
+				{% endif %}
 			</div>
-			{% endif %}
 		</div>
-	</div>
-{% endfor %}
+	{% endfor %}
+</div>

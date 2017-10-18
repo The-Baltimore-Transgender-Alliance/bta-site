@@ -2,14 +2,12 @@
 {% assign author = site.people | where_exp:"person", "person.shortname == include.post.author" | first %}
 
 <div class="card my-light-pink lighten-5">
+
 	<div class="card-content">
-		<span class="card-title my-pink-text darken-4">{{ include.post.title }}</span>
-		<i class="mdi mdi-account"></i><a href="{{author.url}}">{{ author.name }}</a>
-		<div class="date-post">{{ include.date | date: date_format }}</div>
-		<i class="mdi mdi-tag"></i>
-		<div>
-			{{ include.post | tags }}
-		</div>
+		<span class="card-title my-pink-text darken-4"> {{ include.post.title }}</span>
+		<div class="date-post"><i class="mdi mdi-calendar"></i> {{ include.post.date | date: date_format }}</div>
+		<div><i class="mdi mdi-tag"></i> {{ include.post | tags }}</div>
+		<div><i class="mdi mdi-account"></i> <a href="{{author.url}}">{{ author.name }}</a></div>
 		<p>{{ include.post.content | truncatewords: 30 }}</p>
 	</div>
 	<div class="card-action">
