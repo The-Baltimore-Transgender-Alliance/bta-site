@@ -1,0 +1,13 @@
+<div class="card small horizontal my-person-card my-bg darken-1">
+	<div class="card-image hide-on-small-only"><img src="{{include.person.image}}"/></div>
+	<div class="card-stacked">
+		<div class="card-content">
+			<span class="card-title">{{include.person.name}}</span>
+			<span class="card-title my-subtitle">{{include.person.position}}</span>
+			<p class="my-description">{{ include.person.content | strip_html }}</p>
+		</div>
+		<div class="card-action">
+			<a href="{{include.person.url}}">More Info</a>
+		</div>
+	</div>
+</div>

@@ -30,30 +30,50 @@
 	line-height: 122px;
 }
 
-.my-member .my-avatar-container .my-avatar {
-	max-width:100%;
-	max-height:100%;
-	margin: 0;
-	padding: 0;
-	border: 0;
+.my-person-card .card-content .my-subtitle {
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 26px;
 }
 
-.my-member .my-avatar-container {
-	padding-top: 10.5px;
-	padding-bottom: 10.5px;
-	padding-right: 10.5px;
+.my-person-card .card-content .my-description {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
-.my-member .my-content .divider{
-	background-color: darken(#f2f1f4, 20%) !important;
+@media #{$small-and-down} {
+	.my-person-card .card-content .my-description {
+		-webkit-line-clamp: 3;
+	}
 }
 
-.my-team-member .my-avatar-container .my-avatar {
-		border-radius: 50%;
+@media #{$medium-only} {
+	.my-person-card .card-content .my-description {
+		-webkit-line-clamp: 4;
+	}
 }
 
-.my-member .my-header {
-	padding: 0;
+@media #{$large-and-up} {
+	.my-person-card .card-content .my-description {
+		-webkit-line-clamp: 5;
+	}
+}
+
+@media #{$extra-large-and-up} {
+	.my-person-card .card-content .my-description {
+		-webkit-line-clamp: 6;
+	}
+}
+
+.my-org-card .card-image {
+}
+
+.my-org-card .card-image img {
+	max-width: 300px !important;
+	max-height: 300px !important;
+	height: auto !important;
 }
 
 .my-project {

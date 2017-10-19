@@ -23,7 +23,7 @@ blog_authors_to_display: 5
 collections:
   people:
    output: true
-   permalink: /:collection/:name
+   permalink: /:collection/{slug}
    shortname: name
    name: First Last
    position: Example Position
@@ -32,7 +32,7 @@ collections:
    pronouns: They/Them/Theirs
   orgs:
    output: true
-   permalink: /:collection/:name
+   permalink: /:collection/{slug}
    name: Org name
    shortname: name
    website: www.example.com

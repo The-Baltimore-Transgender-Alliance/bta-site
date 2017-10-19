@@ -34,87 +34,87 @@ $my-bg:(
 );
 
 $my-light-pink:(
-  "base":       $light-pink-base,
-  "lighten-5":  lighten($light-pink-base, 25%),
-  "lighten-4":  lighten($light-pink-base, 20%),
-  "lighten-3":  lighten($light-pink-base, 15%),
-  "lighten-2":  lighten($light-pink-base, 10%),
-  "lighten-1":  lighten($light-pink-base, 5%),
-  "darken-1":   darken($light-pink-base, 5%),
-  "darken-2":   darken($light-pink-base, 10%),
-  "darken-3":   darken($light-pink-base, 15%),
-  "darken-4":   darken($light-pink-base, 20%),
+	"base":       $light-pink-base,
+	"lighten-5":  lighten($light-pink-base, 25%),
+	"lighten-4":  lighten($light-pink-base, 20%),
+	"lighten-3":  lighten($light-pink-base, 15%),
+	"lighten-2":  lighten($light-pink-base, 10%),
+	"lighten-1":  lighten($light-pink-base, 5%),
+	"darken-1":   darken($light-pink-base, 5%),
+	"darken-2":   darken($light-pink-base, 10%),
+	"darken-3":   darken($light-pink-base, 15%),
+	"darken-4":   darken($light-pink-base, 20%),
 	"darken-5":   darken($light-pink-base, 25%),
 );
 
 $my-light-blue:(
-  "base":       $light-blue-base,
-  "lighten-5":  lighten($light-blue-base, 25%),
-  "lighten-4":  lighten($light-blue-base, 20%),
-  "lighten-3":  lighten($light-blue-base, 15%),
-  "lighten-2":  lighten($light-blue-base, 10%),
-  "lighten-1":  lighten($light-blue-base, 5%),
-  "darken-1":   darken($light-blue-base, 5%),
-  "darken-2":   darken($light-blue-base, 10%),
-  "darken-3":   darken($light-blue-base, 15%),
-  "darken-4":   darken($light-blue-base, 20%),
+	"base":       $light-blue-base,
+	"lighten-5":  lighten($light-blue-base, 25%),
+	"lighten-4":  lighten($light-blue-base, 20%),
+	"lighten-3":  lighten($light-blue-base, 15%),
+	"lighten-2":  lighten($light-blue-base, 10%),
+	"lighten-1":  lighten($light-blue-base, 5%),
+	"darken-1":   darken($light-blue-base, 5%),
+	"darken-2":   darken($light-blue-base, 10%),
+	"darken-3":   darken($light-blue-base, 15%),
+	"darken-4":   darken($light-blue-base, 20%),
 	"darken-5":   darken($light-blue-base, 25%),
 );
 
 $my-pink:(
-  "base":       $pink-base,
-  "lighten-5":  lighten($pink-base, 25%),
-  "lighten-4":  lighten($pink-base, 20%),
-  "lighten-3":  lighten($pink-base, 15%),
-  "lighten-2":  lighten($pink-base, 10%),
-  "lighten-1":  lighten($pink-base, 5%),
-  "darken-1":   darken($pink-base, 5%),
-  "darken-2":   darken($pink-base, 10%),
-  "darken-3":   darken($pink-base, 15%),
-  "darken-4":   darken($pink-base, 20%),
+	"base":       $pink-base,
+	"lighten-5":  lighten($pink-base, 25%),
+	"lighten-4":  lighten($pink-base, 20%),
+	"lighten-3":  lighten($pink-base, 15%),
+	"lighten-2":  lighten($pink-base, 10%),
+	"lighten-1":  lighten($pink-base, 5%),
+	"darken-1":   darken($pink-base, 5%),
+	"darken-2":   darken($pink-base, 10%),
+	"darken-3":   darken($pink-base, 15%),
+	"darken-4":   darken($pink-base, 20%),
 	"darken-5":   darken($pink-base, 25%),
 );
 
 $my-blue:(
-  "base":       $blue-base,
-  "lighten-5":  lighten($blue-base, 25%),
-  "lighten-4":  lighten($blue-base, 20%),
-  "lighten-3":  lighten($blue-base, 15%),
-  "lighten-2":  lighten($blue-base, 10%),
-  "lighten-1":  lighten($blue-base, 5%),
-  "darken-1":   darken($blue-base, 5%),
-  "darken-2":   darken($blue-base, 10%),
-  "darken-3":   darken($blue-base, 15%),
-  "darken-4":   darken($blue-base, 20%),
+	"base":       $blue-base,
+	"lighten-5":  lighten($blue-base, 25%),
+	"lighten-4":  lighten($blue-base, 20%),
+	"lighten-3":  lighten($blue-base, 15%),
+	"lighten-2":  lighten($blue-base, 10%),
+	"lighten-1":  lighten($blue-base, 5%),
+	"darken-1":   darken($blue-base, 5%),
+	"darken-2":   darken($blue-base, 10%),
+	"darken-3":   darken($blue-base, 15%),
+	"darken-4":   darken($blue-base, 20%),
 	"darken-5":   darken($blue-base, 25%),
 );
 
 $my-light-purple:(
-  "base":       $light-purple-base,
-  "lighten-5":  lighten($light-purple-base, 25%),
-  "lighten-4":  lighten($light-purple-base, 20%),
-  "lighten-3":  lighten($light-purple-base, 15%),
-  "lighten-2":  lighten($light-purple-base, 10%),
-  "lighten-1":  lighten($light-purple-base, 5%),
-  "darken-1":   darken($light-purple-base, 5%),
-  "darken-2":   darken($light-purple-base, 10%),
-  "darken-3":   darken($light-purple-base, 15%),
-  "darken-4":   darken($light-purple-base, 20%),
+	"base":       $light-purple-base,
+	"lighten-5":  lighten($light-purple-base, 25%),
+	"lighten-4":  lighten($light-purple-base, 20%),
+	"lighten-3":  lighten($light-purple-base, 15%),
+	"lighten-2":  lighten($light-purple-base, 10%),
+	"lighten-1":  lighten($light-purple-base, 5%),
+	"darken-1":   darken($light-purple-base, 5%),
+	"darken-2":   darken($light-purple-base, 10%),
+	"darken-3":   darken($light-purple-base, 15%),
+	"darken-4":   darken($light-purple-base, 20%),
 	"darken-5":   darken($light-purple-base, 25%),
 );
 
 $my-black:(
-  "base":       $black-base,
-  "lighten-6": lighten($black-base, 50%),
-  "lighten-5":  lighten($black-base, 25%),
-  "lighten-4":  lighten($black-base, 20%),
-  "lighten-3":  lighten($black-base, 15%),
-  "lighten-2":  lighten($black-base, 10%),
-  "lighten-1":  lighten($black-base, 5%),
-  "darken-1":   darken($black-base, 5%),
-  "darken-2":   darken($black-base, 10%),
-  "darken-3":   darken($black-base, 15%),
-  "darken-4":   darken($black-base, 20%),
+	"base":       $black-base,
+	"lighten-6": lighten($black-base, 50%),
+	"lighten-5":  lighten($black-base, 25%),
+	"lighten-4":  lighten($black-base, 20%),
+	"lighten-3":  lighten($black-base, 15%),
+	"lighten-2":  lighten($black-base, 10%),
+	"lighten-1":  lighten($black-base, 5%),
+	"darken-1":   darken($black-base, 5%),
+	"darken-2":   darken($black-base, 10%),
+	"darken-3":   darken($black-base, 15%),
+	"darken-4":   darken($black-base, 20%),
 	"darken-5":   darken($black-base, 25%),
 );
 
@@ -130,36 +130,36 @@ $my-colors: (
 );
 
 @each $color_name, $color in $my-colors {
-  @each $color_type, $color_value in $color {
-    @if $color_type == "base" {
-      .#{$color_name} {
-        background-color: $color_value !important;
-      }
-      .#{$color_name}-text {
-        color: $color_value !important;
-      }
-    }
-    @else {
-      .#{$color_name}.#{$color_type} {
-        background-color: $color_value !important;
-      }
-      .#{$color_name}-text.text-#{$color_type} {
-        color: $color_value !important;
-      }
-    }
-  }
+	@each $color_type, $color_value in $color {
+		@if $color_type == "base" {
+			.#{$color_name} {
+				background-color: $color_value !important;
+			}
+			.#{$color_name}-text {
+				color: $color_value !important;
+			}
+		}
+		@else {
+			.#{$color_name}.#{$color_type} {
+				background-color: $color_value !important;
+			}
+			.#{$color_name}-text.text-#{$color_type} {
+				color: $color_value !important;
+			}
+		}
+	}
 }
 
 // copied from materialize get a color from my-colors
 @function my-color($color, $type) {
-  @if map-has-key($my-colors, $color) {
-    $curr-color: map-get($my-colors, $color);
-    @if map-has-key($curr-color, $type) {
-      @return map-get($curr-color, $type);
-    }
-  }
-  @warn 'Unknown `#{name}` in $colors.';
-  @return null;
+	@if map-has-key($my-colors, $color) {
+		$curr-color: map-get($my-colors, $color);
+		@if map-has-key($curr-color, $type) {
+			@return map-get($curr-color, $type);
+		}
+	}
+	@warn 'Unknown `#{name}` in $colors.';
+	@return null;
 }
 
 // Override Materialize Variables
@@ -178,3 +178,4 @@ $card-link-color: my-color("my-light-pink", "base") !default;
 // Load materialize
 
 @import "materialize/materialize";
+@import "theme";

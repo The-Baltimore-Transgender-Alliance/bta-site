@@ -5,6 +5,7 @@ facebook: www.facebook.com/bmoretlp
 email: transladiespicnic@bmoretransalliance.com
 shortname: transladiespicnic
 member_org: YES
+image: /assets/images/orgs/transladiespicnic.png
 ---
 
 The Baltimore Trans Ladies’ Picnic is a monthly potluck/picnic/get together for trans women (and transfeminine folks) in Baltimore.
