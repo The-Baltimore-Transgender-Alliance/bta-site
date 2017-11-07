@@ -2,28 +2,33 @@
 layout: page
 title: Team
 permalink: /team/
+include_in_nav: true
 ---
-<h2> Structure </h2>
-We are a parallel platform of leaders from other transgender led projects. We operate on consensus and understand that we must not replicate the systems of marginalization that we seek to oppose. We function, in part, as a project that can be used by all as an organizing tool to energize other projects. But also as an incubator for anything that improves the lives of Baltimore's transgender population.
-Come talk with us about how we can work together to empower our community!
+
+<h2>
+	Structure
+</h2>
+{% include_relative team/structure.md %}
 
 <h2>Our Team</h2>
 {% for person in site.people %}
 	<div class="row">
-		{% include person-card.html person=person %}
+		{% include person-card.html person = person %}
 	</div>
 {% endfor %}
 
 <h2>Member Organizations</h2>
-{% assign member_orgs = site.orgs | where: "member_org", "true" %}
+{% assign member_orgs = site.orgs | where : "member_org",
+"true" %}
 {% for org in member_orgs %}
-	{% include org-card.html org=org %}
+	{% include org-card.html org = org %}
 {% endfor %}
 
 <h2>Our Family</h2>
-{% assign other_orgs = site.orgs | where: "member_org", "false" %}
+{% assign other_orgs = site.orgs | where : "member_org",
+"false" %}
 {% for org in other_orgs %}
-	{% include org-card.html org=org %}
+	{% include org-card.html org = org %}
 {% endfor %}
 
 <!-- <h2>Member Organizations</h2>

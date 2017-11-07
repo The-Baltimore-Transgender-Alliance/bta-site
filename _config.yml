@@ -8,13 +8,6 @@ twitter_url: https://twitter.com/alliancebmore
 twitter_username: alliancebmore
 github_username:  apathinwalking
 
-header_pages:
- - index.md
- - about.md
- - team.html
- - projects.html
- - blog.html
-
 donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
 
 blog_tags_to_display: 5
@@ -48,5 +41,25 @@ sass:
 tag_page_layout: tag-page
 tag_page_dir: tag
 
+include:
+ - _pages
+
 exclude:
  - vendor
+
+# Explicitly turn off the old code
+paginate: nil
+paginate_path: nil
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+   before: 2
+   after: 2
