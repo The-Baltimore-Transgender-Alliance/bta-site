@@ -14,25 +14,7 @@ pagination:
 		<div class="my-blog-container col s12 m9 l9 xl9">
 			{% for post in paginator.posts %} {% include blog-post.html post=post %} {% endfor %}
 			<div class="center-align">
-				{% if paginator.total_pages > 1 %}
-					<ul class="pagination">
-						{% if paginator.previous_page %}
-							<li><a href="{{ paginator.first_page_path | prepend: site.baseurl }}"><i class="mdi mdi-chevron-double-left"></i></a></li>
-							<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><i class="mdi mdi-chevron-left"></i></a></li>
-						{% endif %}
-						{% if paginator.page_trail %}
-							{% for trail in paginator.page_trail %}
-							<li {% if page.url==trail.path %}class="active" {% endif %}>
-								<a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
-							</li>
-							{% endfor %}
-						{% endif %}
-						{% if paginator.next_page %}
-							<li><a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><i class="mdi mdi-chevron-right"></i></a></li>
-							<li><a href="{{ paginator.last_page_path | prepend: site.baseurl }}"><i class="mdi mdi-chevron-double-right"></i></a></li>
-						{% endif %}
-					</ul>
-				{% endif %}
+				{% include paginator-nav.html paginator=paginator %}
 			</div>
 		</div>
 		<div class="my-blog-sidebar col s12 m3 l3 xl3">
