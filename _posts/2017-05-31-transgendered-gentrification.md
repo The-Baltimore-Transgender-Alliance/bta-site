@@ -2,7 +2,7 @@
 layout: post
 author: jamie
 tags: trans community race
-image: /assets/images/posts/transgendered-gentrification.jpg
+cloudinary_image: posts/transgendered-gentrification.jpg
 ---
 On the bus going south into the city I get reminded over & over that I am trans. First, as I’m hurriedly walking to the stop I’m asked if I “need a ride”; he licks his lips before I say no. I wave the bus & when I get on board I feel eyes follow me. I put in my other headphone. A couple minutes pass & the girl behind me asks “are you transitioning?”
 

@@ -1,5 +1,5 @@
 <ul class="collection">
-	{% for post in include.posts %}
+	{% for post in include.posts offset: 0 limit: 5 %}
 		<li class="collection-item avatar">
 			{% assign date_format = site.minima.date_format | default: "%m/%d" %}
 			<div class="date-post">{{ post.date | date: date_format }}</div>

@@ -1,0 +1,1 @@
+We must reclaim our stories... & overwhelm the mainstream with accounts of trans experience, beauty, & power. --writing, speaking, & shouting our own stories we can portray ourselves with the complexity we deserve as fully realized human beings. We must teach others to see, not just to see our gender, but also our humanity.

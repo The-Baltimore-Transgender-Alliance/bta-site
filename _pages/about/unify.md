@@ -1,0 +1,1 @@
+We must come together in unity... if we want to heal each other collectively. We must work to bridge the divides of ability, race, class, language, & identity such that we move into the future with comprehensive solidarity. Our diversity makes us powerful.
