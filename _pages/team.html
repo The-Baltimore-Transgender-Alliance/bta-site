@@ -25,36 +25,10 @@ include_in_nav: true
 	</div>
 {% endfor %}
 
-<h2>Our Family</h2>
+<h2>Our Extended Family</h2>
 {% assign other_orgs = site.orgs | where : "member_org","false" %}
 {% for org in other_orgs %}
 	<div class="row">
 		{% include org-card.html org = org %}
 	</div>
 {% endfor %}
-
-<!-- <h2>Member Organizations</h2>
-{% for member_org in site.orgs %}
-		<div class="my-member my-member-org row my-bg darken-1">
-			<div class="my-avatar-container col xl2 l2 m2 s4">
-				<img class="my-avatar" src="/assets/images/member_organizations/{{ member_org.shortname }}.png">
-			</div>
-			<div class="my-content col xl10 l10 m10 s8">
-				<div class="my-header"><h5>{{ member_org.name }}</h5></div>
-				<div class="divider"></div>
-				<div class="my-description">{{ member_org.content }}</div>
-				{% if member_org.website or member_org.facebook or member_org.email %}
-				<div class="divider"></div>
-				{% endif %}
-				{% if member_org.website != null %}
-				<div class="my-website"><i class="mdi mdi-earth"></i><a href="{{ member_org.website }}"> {{ member_org.website }}</a></div>
-				{% endif %}
-				{% if member_org.facebook != null %}
-				<div class="my-facebook"><i class="mdi mdi-facebook-box"></i><a href="{{ member_org.facebook }}"> {{ member_org.facebook }}</a></div>
-				{% endif %}
-				{% if member_org.email != null %}
-				<div class="my-facebook"><i class="mdi mdi-email"></i><a href="mailto:{{ member_org.email }}"> {{ member_org.email }}</a></div>
-				{% endif %}
-			</div>
-		</div>
-{% endfor %} -->

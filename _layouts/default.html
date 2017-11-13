@@ -3,16 +3,15 @@
 
   {% include head.html %}
 
-  <body class="my-bg">
+  <body class="{{ page.body-color | default: my-bg }}">
 
-    {% include header.html %}
+	{% include header.html %}
 
+		{{ content }}
 
-        {{ content }}
+	{% include footer.html %}
 
-    {% include footer.html %}
-
-    {% include script.html %}
+	{% include script.html %}
 
   </body>
 

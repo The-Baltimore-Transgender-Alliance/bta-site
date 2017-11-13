@@ -3,28 +3,47 @@ layout: default
 title: About
 permalink: /about/
 include_in_nav: true
+body-color: my-black lighten-2
 ---
-<div class="parallax-container">
-	<div class="parallax">
-		<img src="/assets/images/plx-2.png"/>
-	</div>
-</div>
-<div class="container">
-	<h2>History</h2>
-	<div class="section">
-		{% include_relative about/history.md %}
+
+<div class="container white-text">
+	<div class="row">
+		<div class="col s3">
+			<div class="my-vector-block valign-wrapper">
+				<img src="/assets/images/vector/trans-symbol.svg"/>
+			</div>
+		</div>
+		<div class="col s9">
+			<div class="my-text-block valign-wrapper">
+				<div class="valign">
+					<h1>History</h1>
+					<p>{% include_relative about/history.md %}</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
 <div class="parallax-container">
 	<div class="parallax">
-		<img src="/assets/images/plx-3.png"/>
+		<img src="/assets/images/parallax-2.png"/>
 	</div>
 </div>
-<div class="container">
+
+
+<div class="container white-text">
 	<h2>Mission</h2>
 	{% include_relative about/mission.md %}
+</div>
 
+<div class="parallax-container">
+	<div class="parallax">
+		<img src="/assets/images/parallax-1.png"/>
+	</div>
+</div>
+
+
+<div class="container white-text">
 	<h4>Unify</h4>
 	{% include_relative about/unify.md %}
 	<h4>Reclaim</h4>
