@@ -30,18 +30,37 @@
 	line-height: 122px;
 }
 
-.my-text-block {
-	height: 400px;
+@media #{$small-and-down} {
+	.my-text-block, .my-vector-block {
+		height: 700px;
+	}
+}
+
+@media #{$medium-only} {
+	.my-text-block, .my-vector-block {
+		height: 600px;
+	}
+}
+
+@media #{$large-and-up} {
+	.my-text-block, .my-vector-block {
+		height: 500px;
+	}
+}
+
+@media #{$extra-large-and-up} {
+	.my-text-block, .my-vector-block {
+		height: 400px;
+	}
 }
 
 .my-vector-block {
-	height: 100%;
 	padding: 24px;
 }
 
 .my-vector-block img {
-	width: auto;
-	height: 352px;;
+	width: 100%;
+	max-height: 352px;
 }
 
 .my-person-card .card-content .my-subtitle {
