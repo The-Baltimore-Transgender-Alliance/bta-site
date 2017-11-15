@@ -32,19 +32,19 @@
 
 @media #{$small-and-down} {
 	.my-text-block, .my-vector-block {
-		height: 700px;
+		height: 550px;
 	}
 }
 
 @media #{$medium-only} {
 	.my-text-block, .my-vector-block {
-		height: 600px;
+		height: 500px;
 	}
 }
 
 @media #{$large-and-up} {
 	.my-text-block, .my-vector-block {
-		height: 500px;
+		height: 450px;
 	}
 }
 
