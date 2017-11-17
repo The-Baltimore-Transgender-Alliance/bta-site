@@ -1,0 +1,12 @@
+<div class="card-panel my-project-card my-light-blue lighten-5">
+	<span class="card-title my-blue-text">{{ include.project.name }}</span>
+	<span class="black-text">{{ include.project.content }}</span\>
+	{% if include.project.email %}
+		<div class="my-info">
+			<span class="my-email">
+				<b>For more info contact:</b>
+				<a class="my-light-blue-text" href="mailto:{{ project.email }}"> {{ include.project.email }}</a>
+			</span>
+		</div>
+	{% endif %}
+</div>

@@ -13,7 +13,11 @@
 			<div class="date-post"><i class="mdi mdi-calendar"></i> {{ include.post.date | date: date_format }}</div>
 			<div><i class="mdi mdi-tag"></i> {{ include.post | tags }}</div>
 			<div><i class="mdi mdi-account"></i> <a href="{{author.url}}">{{ author.name }}</a></div>
-			<p>{{ include.post.content | truncatewords: 30 }}</p>
+			{% if include.post.cw %}
+				<h5>CONTENT WARNING: {{ include.post.cw-text | capitalize }}</h5>
+			{% else %}
+				<p>{{ include.post.content | truncatewords: 30 }}</p>
+			{% endif %}
 		</div>
 		<div class="card-action">
 			<a href="{{ include.post.url | relative_url }}" class="{{ include.post.action_text_color | default: 'my-pink-text' }}">
