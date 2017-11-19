@@ -102,3 +102,36 @@ body-color: my-black lighten-2
 	</div></div>
 
 </div></div>
+
+
+
+<div class="parallax-container"><div class="parallax">
+	<img src="/assets/images/parallax-5.png"/>
+</div></div>
+
+<div class="container white-text"><div class="row">
+	<h2>Structure</h2>
+	{% include_relative about/structure.md %}
+</div></div>
+
+<div class="container white-text"><div class="row">
+	<h2>Our Team</h2>
+	{% for person in site.people %}
+		<div class="col xl3 l4 m5 s6"><div class="my-vector-block my-person-block">
+			<div class="my-img hide-on-small-only">
+				{% include cloudinary-image.html image=person.cloudinary_image options="w_200,h_200,c_pad,b_auto:border,r_max" %}
+			</div>
+		</div></div>
+		<div class="col xl9 l8 m7 s6"><div class="my-text-block"><div class="valign">
+			<h3>{{person.name}}</h3>
+			<span class="card-title my-subtitle">{{include.person.position}}</span>
+			<p class="my-description">{{ person.content | strip_html }}</p>
+			<div class="card-action">
+				<a href="{{include.person.url}}">More Info</a>
+			</div>
+		</div></div></div>
+		<!-- <div class="row">
+			{% include person-card.html person = person %}
+		</div> -->
+	{% endfor %}
+</div></div>

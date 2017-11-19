@@ -4,7 +4,7 @@
 <div class="my-blog-card small card horizontal my-light-pink lighten-5">
 	{% if include.post.cloudinary_image %}
 		<div class="card-image hide-on-small-only">
-			{% include cloudinary-image.html image=include.post.cloudinary_image options="h_300,c_scale/w_200,h_300,c_crop" %}
+			{% include cloudinary-image.html image=include.post.cloudinary_image options="w_200,h_300,c_fill/w_200,h_300,c_crop" %}
 		</div>
 	{% endif %}
 	<div class="card-stacked">

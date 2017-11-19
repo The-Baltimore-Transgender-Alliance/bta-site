@@ -1,0 +1,36 @@
+---
+layout: page
+title: Resources
+permalink: /resources/
+include_in_nav: true
+---
+{% capture credits %}{% include_relative resources/credits.md %}{% endcapture %}
+
+{% for section in site.data.resources %}
+	<section>
+		<h2>{{section.name}}</h2>
+		<table class="bordered responsive-table my-table">
+			<thead>
+				<tr>
+					{% for h in section.header %}
+						<th>{{ h }}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for row in section.rows %}
+					<tr>
+						{% for col in row %}
+						<td>{{ col }}</td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</section>
+{% endfor %}
+
+<section>
+	<h2>Credits</h2>
+	<p>{{ credits | markdownify }}</p>
+</section>

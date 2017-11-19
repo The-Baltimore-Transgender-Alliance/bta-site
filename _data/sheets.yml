@@ -1,0 +1,35 @@
+
+- sheet_name: Organizations
+  name: Organizations
+  id: 1571211893
+  range: "B4:F"
+
+- sheet_name: Services
+  name: Services
+  id: 654170023
+  range: "B4:F"
+
+- sheet_name: Groups
+  name: Local Groups
+  id: 626565164
+  range: "B4:F12"
+
+- sheet_name: Groups
+  name: Groups Outside Baltimore
+  id: 626565164
+  range: "B15:F"
+
+- sheet_name: Healthcare
+  name: Healthcare
+  id: 1500296117
+  range: "B4:F"
+
+- sheet_name: University Resources
+  name: University Resources
+  id: 514292812
+  range: "B4:F"
+
+- sheet_name: Online Resources / Hotlines
+  name: Online Resources / Hotlines
+  id: 1787362336
+  range: "B4:F"
