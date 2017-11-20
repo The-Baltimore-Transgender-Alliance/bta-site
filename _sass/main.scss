@@ -1,14 +1,23 @@
+// import stuff that needs to go before materialize then materialize
+@import "variables";
+@import "materialize/materialize";
+
+// import everything else
+@import "layout/header";
+
+@import "components/latest-posts";
+@import "components/parallax";
+
+@import "pages/home";
+@import "pages/post";
+@import "pages/about";
+@import "pages/resources";
+@import "pages/gallery";
+
 @charset "utf-8";
 
 h1, h2, h3, h4, h5, h6 {
 		-webkit-font-smoothing: antialiased;
-}
-
-.icon-block {
-	padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
 }
 
 h1.page-title {
@@ -16,46 +25,20 @@ h1.page-title {
 		font-size: 2.3em;
 		text-align: center;
 }
-.col.grid-example {
-		border: 1px solid #eee;
-		margin: 7px 0;
-		text-align: center;
-		line-height: 50px;
-		font-size: 28px;
-		background-color: tomato;
-		color: white;
-		padding: 0;
-}
+
 .collection .collection-item.avatar {
 		padding-right: 30px;
 }
-.last-post {
-		padding: 10px 0 15px;
-}
-.last-post .collection .collection-item.avatar>.date-post {
-		position: absolute;
-		width: 54px;
-		height: 54px;
-		overflow: hidden;
-		left: 10px;
-		display: inline-block;
-		padding: 16px 0;
-		vertical-align: middle;
-		background: #ad1457;
-		color: #fff;
-		text-align: center;
-}
+
 .txt-center {
 		text-align: center;
 }
-.post-header h1.post-title {
-		font-size: 2.8em;
-		font-weight: 800;
+
+.my-page-title {
+	font-size: 48px;
 }
-.post-header time {
-		color: #cacaca;
-		font-size: 0.9em;
-}
-p.rss-subscribe {
-		margin: 0;
+
+.my-top-nav {
+	height: 122px;
+	line-height: 122px;
 }

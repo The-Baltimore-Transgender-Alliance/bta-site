@@ -6,28 +6,181 @@ include_in_nav: true
 body-color: my-black lighten-2
 ---
 
-<div class="container white-text"><div class="row">
+<div class="white-text">
 
-	<div class="col xl3 l4 m5 s6"><div class="my-vector-block valign-wrapper">
-		<img src="/assets/images/vector/history.svg"/>
+	<!-- HISTORY -->
+
+	<div class="my-about-container container">
+		<div class="my-img-block">
+			<img src="/assets/images/vector/history.svg"/>
+		</div>
+		<div class="my-text-block">
+			<h1>History</h1>
+			<p>{% include_relative about/history.md %}</p>
+		</div>
+	</div>
+
+	<div class="parallax-container"><div class="parallax">
+		<img src="/assets/images/parallax-1.png"/>
 	</div></div>
 
-	<div class="col xl9 l8 m7 s6"><div class="my-text-block valign-wrapper"><div class="valign">
+
+
+
+
+	<!-- MISSION -->
+
+	<div class="my-about-container container">
+		<div class="my-img-block">
+			<img src="/assets/images/vector/mission.svg"/>
+		</div>
+		<div class="my-text-block section">
+			<h1>Mission</h1>
+			<p>{% include_relative about/mission.md %}</p>
+		</div>
+	</div>
+
+	<div class="my-about-container container">
+		<div class="my-img-block">
+			<img src="/assets/images/vector/unify.svg"/>
+		</div>
+		<div class="my-text-block section">
+			<h3>Unify</h3>
+			<p>{% include_relative about/unify.md %}</p>
+		</div>
+	</div>
+
+	<div class="my-about-container container">
+		<div class="my-img-block">
+			<img src="/assets/images/vector/reclaim.svg"/>
+		</div>
+		<div class="my-text-block section">
+			<h3>Reclaim</h3>
+			<p>{% include_relative about/reclaim.md %}</p>
+		</div>
+	</div>
+
+	<div class="my-about-container container">
+		<div class="my-img-block">
+			<img src="/assets/images/vector/empower.svg"/>
+		</div>
+		<div class="my-text-block section">
+			<h3>Empower</h3>
+			<p>{% include_relative about/empower.md %}</p>
+		</div>
+	</div>
+
+	<div class="parallax-container"><div class="parallax">
+		<img src="/assets/images/parallax-2.png"/>
+	</div></div>
+
+
+	<!-- STRUCTURE -->
+
+	<div class="my-about-container container">
+		<div class="my-img-block">
+			<img src="/assets/images/vector/structure.svg"/>
+		</div>
+		<div class="my-text-block section">
+			<h1>Structure</h1>
+			<p>{% include_relative about/structure.md %}</p>
+		</div>
+	</div>
+
+	<div class="parallax-container"><div class="parallax">
+		<img src="/assets/images/parallax-4.png"/>
+	</div></div>
+
+
+
+
+
+
+
+	<!-- TEAM -->
+	<div class="container">
+		<h1>Our Team</h1>
+	</div>
+
+	{% for person in site.people %}
+		<div class="my-about-container container">
+			<div class="my-avatar-block">
+				{% include cloudinary-image.html image=person.cloudinary_image options="w_200,h_200,c_pad,b_auto:border,r_max" %}
+			</div>
+			<div class="my-text-block section">
+				<h3>{{person.name}}</h3>
+				<span class="card-title my-subtitle">{{include.person.position}}</span>
+				<p class="my-description">{{ person.content | strip_html }}</p>
+				<div class="card-action">
+					<a href="{{include.person.url}}">More Info</a>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+
+	<div class="parallax-container"><div class="parallax">
+		<img src="/assets/images/parallax-3.png"/>
+	</div></div>
+
+
+
+
+
+
+	<!-- Member Orgs -->
+	<div class="container">
+		<h1>Member Organizations</h1>
+	</div>
+
+	{% assign member_orgs = site.orgs | where : "member_org","true" %}
+	{% for org in member_orgs %}
+		<div class="my-about-container container">
+			<div class="my-avatar-block">
+				{% include cloudinary-image.html image=org.cloudinary_image options="w_200,h_200,c_pad,b_auto:border,r_max" %}
+			</div>
+			<div class="my-text-block section">
+				<h3>{{org.name}}</h3>
+				<p class="my-description">{{ org.content | strip_html }}</p>
+				<div class="card-action">
+					<a href="{{include.org.url}}">More Info</a>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+
+</div>
+<!-- <div class="container white-text"><div class="row">
+
+	<div class="col xl3"><div class="my-vector-block">
+		<div class="my-top"></div>
+		<img src="/assets/images/vector/history.svg"/>
+		<div class="my-btm"></div>
+	</div></div>
+
+	<div class="col xl9"><div class="my-text-block valign-wrapper"><div class="valign">
 		<h1>History</h1>
 		<p>{% include_relative about/history.md %}</p>
 	</div></div></div>
 
-</div></div>
+</div></div> -->
 
 
 
-<div class="parallax-container"><div class="parallax">
-	<img src="/assets/images/parallax-2.png"/>
-</div></div>
 
 
 
-<div class="container white-text"><div class="row">
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container white-text"><div class="row">
 
 	<div class="col xl3 l4 m5 s6"><div class="my-vector-block valign-wrapper">
 		<img src="/assets/images/vector/mission.svg"/>
@@ -130,8 +283,5 @@ body-color: my-black lighten-2
 				<a href="{{include.person.url}}">More Info</a>
 			</div>
 		</div></div></div>
-		<!-- <div class="row">
-			{% include person-card.html person = person %}
-		</div> -->
 	{% endfor %}
-</div></div>
+</div></div> -->

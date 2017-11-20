@@ -1,7 +1,3 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
 $flag-blue: #63cdf7;
 $flag-pink: #f8a7b8;
 $flag-lavender: #a780b9;
@@ -162,6 +158,7 @@ $my-colors: (
 	@return null;
 }
 
+
 // Override Materialize Variables
 
 $primary-color: my-color("my-light-pink", "base") !default;
@@ -174,8 +171,3 @@ $error-color: my-color("my-pink", "base") !default;
 $link-color: my-color("my-light-pink", "darken-1") !default;
 
 $card-link-color: my-color("my-light-pink", "base") !default;
-
-// Load materialize
-
-@import "materialize/materialize";
-@import "theme";

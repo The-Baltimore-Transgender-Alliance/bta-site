@@ -1,0 +1,14 @@
+.my-latest-posts {
+		padding: 10px 0 15px;
+}
+.my-latest-posts .collection .collection-item.avatar>.my-date-post {
+		position: absolute;
+		width: 54px;
+		height: 54px;
+		overflow: hidden;
+		left: 10px;
+		display: inline-block;
+		padding: 16px 0;
+		vertical-align: middle;
+		text-align: center;
+}

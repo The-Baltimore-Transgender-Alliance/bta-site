@@ -1,0 +1,17 @@
+.my-header .nav-wrapper .brand-logo .bta-logo-text {
+	height: 56px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+	.my-header .nav-wrapper .brand-logo .bta-logo-text {
+		height: 48px;
+		margin-top: 4px;
+		margin-bottom: 4px;
+	}
+	.my-header {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
