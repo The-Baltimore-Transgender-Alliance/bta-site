@@ -13,25 +13,26 @@
 @import "pages/about";
 @import "pages/resources";
 @import "pages/gallery";
+@import "pages/projects";
 
 @charset "utf-8";
 
 h1, h2, h3, h4, h5, h6 {
-		-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1.page-title {
-		font-weight: 500;
-		font-size: 2.3em;
-		text-align: center;
+	font-weight: 500;
+	font-size: 2.3em;
+	text-align: center;
 }
 
 .collection .collection-item.avatar {
-		padding-right: 30px;
+	padding-right: 30px;
 }
 
 .txt-center {
-		text-align: center;
+	text-align: center;
 }
 
 .my-page-title {

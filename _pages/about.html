@@ -20,7 +20,7 @@ body-color: my-black lighten-2
 		</div>
 	</div>
 
-	<div class="parallax-container"><div class="parallax">
+	<div class="parallax-container my-about-parallax"><div class="parallax">
 		<img src="/assets/images/parallax-1.png"/>
 	</div></div>
 
@@ -70,9 +70,12 @@ body-color: my-black lighten-2
 		</div>
 	</div>
 
-	<div class="parallax-container"><div class="parallax">
+	<div class="parallax-container my-about-parallax"><div class="parallax">
 		<img src="/assets/images/parallax-2.png"/>
 	</div></div>
+
+
+
 
 
 	<!-- STRUCTURE -->
@@ -87,7 +90,7 @@ body-color: my-black lighten-2
 		</div>
 	</div>
 
-	<div class="parallax-container"><div class="parallax">
+	<div class="parallax-container my-about-parallax"><div class="parallax">
 		<img src="/assets/images/parallax-4.png"/>
 	</div></div>
 
@@ -103,22 +106,22 @@ body-color: my-black lighten-2
 	</div>
 
 	{% for person in site.people %}
-		<div class="my-about-container container">
+		<div class="my-person my-about-container container">
 			<div class="my-avatar-block">
-				{% include cloudinary-image.html image=person.cloudinary_image options="w_200,h_200,c_pad,b_auto:border,r_max" %}
+				{% if person.cloudinary_image %}
+					<img class="my-bg darken-1 z-depth-2" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_200,h_200,c_pad,b_auto:border/{{ person.cloudinary_image }}"/>
+				{% endif %}
 			</div>
 			<div class="my-text-block section">
 				<h3>{{person.name}}</h3>
-				<span class="card-title my-subtitle">{{include.person.position}}</span>
+				<span class="my-subtitle">{{ person.position }}</span>
 				<p class="my-description">{{ person.content | strip_html }}</p>
-				<div class="card-action">
-					<a href="{{include.person.url}}">More Info</a>
-				</div>
+				<a class="waves-effect waves-light btn" href="{{person.url}}">More Info</a>
 			</div>
 		</div>
 	{% endfor %}
 
-	<div class="parallax-container"><div class="parallax">
+	<div class="parallax-container my-about-parallax"><div class="parallax">
 		<img src="/assets/images/parallax-3.png"/>
 	</div></div>
 
@@ -134,20 +137,47 @@ body-color: my-black lighten-2
 
 	{% assign member_orgs = site.orgs | where : "member_org","true" %}
 	{% for org in member_orgs %}
-		<div class="my-about-container container">
+		<div class="my-org my-about-container container">
 			<div class="my-avatar-block">
-				{% include cloudinary-image.html image=org.cloudinary_image options="w_200,h_200,c_pad,b_auto:border,r_max" %}
+				{% if org.cloudinary_image %}
+					<img class="my-bg darken-1 z-depth-2" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_200,h_200,c_pad,b_auto:border,r_max/{{ org.cloudinary_image }}"/>
+				{% endif %}
 			</div>
 			<div class="my-text-block section">
 				<h3>{{org.name}}</h3>
 				<p class="my-description">{{ org.content | strip_html }}</p>
-				<div class="card-action">
-					<a href="{{include.org.url}}">More Info</a>
-				</div>
+				<a class="waves-effect waves-light btn" href="{{org.url}}">More Info</a>
 			</div>
 		</div>
 	{% endfor %}
 
+	<div class="parallax-container my-about-parallax"><div class="parallax">
+		<img src="/assets/images/parallax-5.png"/>
+	</div></div>
+
+
+
+
+
+	<!-- Extended Family -->
+	<div class="container">
+		<h1>Extended Family</h1>
+	</div>
+	{% assign other_orgs = site.orgs | where : "member_org","false" %}
+	{% for org in other_orgs %}
+		<div class="my-org my-about-container container">
+			<!-- <div class="my-avatar-block">
+				{% if org.cloudinary_image %}
+					<img class="my-bg darken-1 z-depth-2" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_200,h_200,c_pad,b_auto:border,r_max/{{ org.cloudinary_image }}"/>
+				{% endif %}
+			</div> -->
+			<div class="my-text-block section">
+				<h3>{{org.name}}</h3>
+				<p class="my-description">{{ org.content | strip_html }}</p>
+				<a class="waves-effect waves-light btn" href="{{org.url}}">More Info</a>
+			</div>
+		</div>
+	{% endfor %}
 </div>
 <!-- <div class="container white-text"><div class="row">
 
@@ -195,7 +225,7 @@ body-color: my-black lighten-2
 
 
 
-<div class="parallax-container"><div class="parallax">
+<div class="parallax-container my-about-parallax"><div class="parallax">
 	<img src="/assets/images/parallax-1.png"/>
 </div></div>
 
@@ -216,7 +246,7 @@ body-color: my-black lighten-2
 
 
 
-<div class="parallax-container"><div class="parallax">
+<div class="parallax-container my-about-parallax"><div class="parallax">
 	<img src="/assets/images/parallax-3.png"/>
 </div></div>
 
@@ -237,7 +267,7 @@ body-color: my-black lighten-2
 
 
 
-<div class="parallax-container"><div class="parallax">
+<div class="parallax-container my-about-parallax"><div class="parallax">
 	<img src="/assets/images/parallax-4.png"/>
 </div></div>
 
@@ -258,7 +288,7 @@ body-color: my-black lighten-2
 
 
 
-<div class="parallax-container"><div class="parallax">
+<div class="parallax-container my-about-parallax"><div class="parallax">
 	<img src="/assets/images/parallax-5.png"/>
 </div></div>
 
