@@ -1,6 +1,6 @@
 ---
 layout: post
-author: bta
+author: ava
 tags: news announcements transphobia violence
 cloudinary_image: posts/crystal-edmonds.jpg
 cw: true

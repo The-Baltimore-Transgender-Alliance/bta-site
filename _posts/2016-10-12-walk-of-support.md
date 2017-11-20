@@ -1,6 +1,6 @@
 ---
 layout: post
-author: bta
+author: monica
 tags: news announcements press-releases
 cloudinary_image: posts/walk-of-support.jpg
 ---

@@ -1,21 +1,19 @@
 ---
-layout: default
+layout: page
 title: Posts by Authors
 permalink: /blog/authors
 ---
 {% comment %} Collecting Posts by Authors {% endcomment %}
 {% assign posts_by_author = site.posts | group_by:"author" %}
 
-<div class="container">
-	{% for author in posts_by_author %}
-		<h4>{{ author.name }}</h4>
-		<div class="divider"></div>
-		<div class="section">
-			<ul>
-				{% for post in author.items %}
-					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-				{% endfor %}
-			</ul>
-		</div>
-	{% endfor %}
-</div>
+{% for author in posts_by_author %}
+	<h4 id="{{author.name}}">{{ author.name }}</h4>
+	<div class="divider"></div>
+	<div class="section">
+		<ul>
+			{% for post in author.items %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endfor %}

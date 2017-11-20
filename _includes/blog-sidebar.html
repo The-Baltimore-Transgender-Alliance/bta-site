@@ -6,16 +6,18 @@
 				{% assign authors_posts = site.posts | where_exp:"post","post.author == person.shortname" %}
 				{% if authors_posts.size >= 1 %}
 					<li data-sort="{{ site.posts.size | minus: authors_posts.size | prepend: '0000' | slice: -4, 4 }}">
-						<a href="/people/{{ person.shortname }}">{{ person.name }} <span>({{ authors_posts.size }})</span></a>
+						<a href="/blog/authors#{{ person.shortname }}">{{ person.name }} <span>({{ authors_posts.size }})</span></a>
 					</li>
 				{% endif %}
 			{% endfor %}
 		{% endcapture %}
 		{{ authors | split:'</li>' | sort | join:'</li>' }}
+		<li>
+			<a href="/blog/authors">All Posts by Authors</a>
+		</li>
 	</ul>
 </div>
 <div class="divider"></div>
-
 
 <div class="section">
 	<h5>Posts by Tags</h5>
@@ -28,5 +30,8 @@
 			{% endfor %}
 		{% endcapture %}
 		{{ tags | split:'</li>' | sort | join:'</li>' }}
+		<li>
+			<a href="/blog/tags">All Posts by Tags</a>
+		</li>
 	</ul>
 </div>

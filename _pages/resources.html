@@ -6,6 +6,11 @@ include_in_nav: true
 ---
 {% capture credits %}{% include_relative resources/credits.md %}{% endcapture %}
 
+<section>
+	<h2>Credits</h2>
+	<p>{{ credits | markdownify }}</p>
+</section>
+
 {% for section in site.data.resources %}
 	<section>
 		<h2>{{section.name}}</h2>
@@ -29,8 +34,3 @@ include_in_nav: true
 		</table>
 	</section>
 {% endfor %}
-
-<section>
-	<h2>Credits</h2>
-	<p>{{ credits | markdownify }}</p>
-</section>
