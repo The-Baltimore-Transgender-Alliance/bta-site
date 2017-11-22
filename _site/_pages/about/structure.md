@@ -1,0 +1,2 @@
+We are a parallel platform of transgender leaders & LGBT community activists. We operate on consensus deliberately because we understand that we can’t replicate the systems of marginalization that we seek to oppose in our pursuit of self-empowerment
+We function, in part, as a project that can be used by all transgender people as an organizing tool to energize other projects; incubating anything that improves the lives of Baltimore's transgender population. Come talk with us about how we can work together to empower our community!
