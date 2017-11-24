@@ -52,6 +52,7 @@ collections:
    email: example@bmoretransalliance.com
    phone: 555-555-5555
    pronouns: They/Them/Theirs
+   order: 0
   orgs:
    output: true
    permalink: /:collection/{slug}

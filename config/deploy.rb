@@ -3,9 +3,9 @@ lock "~> 3.10.0"
 
 set :application, 'bta-site'
 
-set :repo_url, 'git@github.com:bmoretransalliance/bta-site.git'
+set :repo_url, 'git@github.com:The-Baltimore-Transgender-Alliance/bta-site.git'
 
-set :deploy_to, '/home/deploy/bta-site'
+set :deploy_to, -> { "/var/www/bmoretransalliance.com" }
 
 set :ssh_options, { :forward_agent => true }
 
