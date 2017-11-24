@@ -11,7 +11,8 @@ github_username:  apathinwalking
 donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
 
 sass:
-  style: compressed
+  style: expanded
+  sass_dir: _sass
 
 tag_page_layout: tag-page
 tag_page_dir: tag
