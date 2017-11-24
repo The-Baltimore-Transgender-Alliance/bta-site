@@ -1,4 +1,39 @@
-// .parallax img {
-// 	@media #{$small-and-down} { max-width: 100%; }
-// 	@media #{$medium-and-up} { width: 100%; }
-// }
+.parallax-container {
+	height: 500px;
+}
+
+@media #{$small-and-down} {
+	.parallax-container {
+		height: 200px;
+	}
+	.parallax img {
+		max-width: 125%;
+	}
+}
+
+@media #{$medium-only} {
+	.parallax-container {
+		height: 350px;
+	}
+	.parallax img {
+		max-width: 125%;
+	}
+}
+
+@media #{$large-and-up} {
+	.parallax-container {
+		height: 400px;
+	}
+	.parallax img {
+		max-width: 110%;
+	}
+}
+
+@media #{$extra-large-and-up} {
+	.parallax-container {
+		height: 500px;
+	}
+	.parallax img {
+		max-width: 100%;
+	}
+}
