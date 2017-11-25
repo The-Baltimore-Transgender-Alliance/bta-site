@@ -4,7 +4,7 @@ shortname: ken
 name: Ken Jiretsu
 position: Peer Support
 email: ken@bmoretransalliance.com
-phone: 555-555-5555
+phone: 410-299-3137
 pronouns: He/him/his
 cloudinary_image: people/ken.jpg
 weight: 2

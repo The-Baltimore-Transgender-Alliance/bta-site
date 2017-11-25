@@ -4,7 +4,7 @@ shortname: evan
 name: Evan Lori Mahone
 position: Media Specialist
 email: evan@bmoretransalliance.com
-phone: 555-555-5555
+phone: 410-877-4722
 pronouns: She/her/hers & They/them/theirs
 cloudinary_image: people/evan-2.jpg
 weight: 4

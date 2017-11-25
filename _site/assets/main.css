@@ -9185,13 +9185,30 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/
 }
 
-.my-header .nav-wrapper .brand-logo .bta-logo-text {
-  height: 56px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+.my-header .my-nav-links .my-link {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-@media (max-width: 600px) {
+.my-header .nav-wrapper .brand-logo .bta-logo-text {
+  height: 44px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-header .nav-wrapper .brand-logo .bta-logo-text {
+    height: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .my-header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   .my-header .nav-wrapper .brand-logo .bta-logo-text {
     height: 48px;
     margin-top: 4px;
@@ -9201,6 +9218,20 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .my-header {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .my-header .nav-wrapper .brand-logo .bta-logo-text {
+    height: 44px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .my-header .nav-wrapper .brand-logo .bta-logo-text {
+    height: 44px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .my-latest-posts {
@@ -9439,6 +9470,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-weight: 300;
 }
 
+.my-person-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-person-container .my-img-block img {
+  border-radius: 50% !important;
+}
+
+.my-person-container .my-text-block {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-person-container {
+    flex-wrap: wrap;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
 }

@@ -6,3 +6,9 @@
 .my-mission-block {
 	padding: 0 15px;
 }
+
+@media #{$small-and-down} {
+	.my-mission-block h2 {
+		
+	}
+}

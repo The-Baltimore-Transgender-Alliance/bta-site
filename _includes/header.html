@@ -1,13 +1,12 @@
 <nav class="my-header my-black" role="navigation">
-	<div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">{% include logo-text.html %}</a>
-	{% assign default_paths = site.pages | map: "path" %}
-	{% assign page_paths = site.header_pages | default: default_paths %}
+	<div class="nav-wrapper container">
+		<a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">{% include logo-text.html %}</a>
 
-		<ul class="right hide-on-med-and-down">
+		<ul class="my-nav-links right hide-on-med-and-down">
 			{% for link in site.data.navlinks %}
-				<li><a href="{{ link.link | relative_url }}">{{ link.title | escape }}</a></li>
+				<li><a class="my-link" href="{{ link.link | relative_url }}">{{ link.title | escape }}</a></li>
 			{% endfor %}
-			<a href="{{ site.donate_link }}" class="waves-effect waves-light btn">Donate</a>
+			<!-- <a href="{{ site.donate_link }}" class="waves-effect waves-light btn">Donate</a> -->
 		</ul>
 
 		<ul id="nav-mobile" class="side-nav">

@@ -3,20 +3,27 @@ layout: default
 ---
 {% include top-nav.html title=page.name %}
 <div class="container">
-	{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
 	<div class="section">
-		<div class="my-position"><h6><i class="mdi mdi-account"></i> {{ page.position }}</h6></div>
-		<div class="my-pronouns"><h6><i class="mdi mdi-message"></i> {{ page.pronouns }}</h6></div>
-		<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ page.phone }}</h6></div>
-		<div class="my-email"><h6><i class="mdi mdi-email"></i> <a href="mailto:{{ page.email }}"> {{ page.email }}</a></h6></div>
+		<div class="my-person-container">
+			<div class="my-img-block">
+				<img class="my-bg darken-1" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_400,h_400,c_pad,b_auto:border/{{ page.cloudinary_image }}"/>
+			</div>
+			<div class="my-text-block">
+				<div class="my-position"><h6><i class="mdi mdi-account"></i> {{ page.position }}</h6></div>
+				<div class="my-pronouns"><h6><i class="mdi mdi-message"></i> {{ page.pronouns }}</h6></div>
+				<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ page.phone }}</h6></div>
+				<div class="my-email"><h6><i class="mdi mdi-email"></i> <a href="mailto:{{ page.email }}"> {{ page.email }}</a></h6></div>
+			</div>
+		</div>
 	</div>
+	{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
 	<div class="divider"></div>
 	<div class="section">
 		{{ content }}
 	</div>
 	{% if posts_by_author.size >= 1 %}
 	<h5>Latest Posts by {{ page.name }}</h5>
-	<div class="last-post">
+	<div class="my-latest-posts">
 		{% include latest-posts.html posts=posts_by_author %}
 	</div>
 	{% endif %}

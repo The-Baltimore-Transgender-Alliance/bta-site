@@ -1,15 +1,22 @@
+## SITE VARIABLES ##
 title: The Baltimore Transgender Alliance
 author: Evan Lori Mahone
 email: evan@bmoretransalliance.com
 description: The Baltimore Transgender Alliance's Home Page on the Web
 
-twitter_url: https://twitter.com/alliancebmore
-
-twitter_username: alliancebmore
-github_username:  apathinwalking
+company: The Baltimore Transgender Alliance
+summary: 'We work to uplift the voices of transgender and gender non-conforming people in Baltimore City and continually center our community’s needs in broader political conversations.'
+copyright_year: 2017
+address:
+ - '2530 North Charles Street'
+ - '3rd Floor - Room 1'
+ - 'Baltimore, MD 21218'
 
 donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
+cloud_name: bmoretransalliance
 
+
+## CONFIGUTATION STUFF ##
 sass:
   style: expanded
   sass_dir: _sass
@@ -40,28 +47,15 @@ pagination:
    before: 2
    after: 2
 
-cloud_name: bmoretransalliance
 fetch_resources_data: true
 
 collections:
   people:
    output: true
    permalink: /:collection/:slug
-   shortname: name
-   name: First Last
-   position: Example Position
-   email: example@bmoretransalliance.com
-   phone: 555-555-5555
-   pronouns: They/Them/Theirs
-   order: 0
   orgs:
    output: true
    permalink: /:collection/{slug}
-   name: Org name
-   shortname: name
-   website: www.example.com
-   facebook: www.facebook.com/example
-   email: example@example.com
   projects:
    name: Example
    email: example@example.com

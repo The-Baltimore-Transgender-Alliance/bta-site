@@ -4,7 +4,7 @@ shortname: ava
 name: Ava Pipitone
 position: Executive Director
 email: ava@bmoretransalliance.com
-phone: 555-555-5555
+phone: 443-823-4839
 pronouns: She/her/hers
 cloudinary_image: people/ava.jpg
 weight: 3

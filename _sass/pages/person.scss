@@ -1,0 +1,22 @@
+.my-person-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-person-container .my-img-block img {
+	border-radius: 50% !important;
+	// padding: 12px;
+	// width: 100%;
+}
+
+.my-person-container .my-text-block {
+	flex-grow: 1; // grows to the rest of the container
+}
+
+@media #{$small-and-down} {
+	.my-person-container {
+		flex-wrap: wrap;
+	}
+}

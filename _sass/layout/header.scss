@@ -1,10 +1,27 @@
-.my-header .nav-wrapper .brand-logo .bta-logo-text {
-	height: 56px;
-	margin-top: 4px;
-	margin-bottom: 4px;
+.my-header .my-nav-links .my-link {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-@media (max-width: 600px) {
+.my-header .nav-wrapper .brand-logo .bta-logo-text {
+	height: 44px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media #{$small-and-down} {
+	.my-header .nav-wrapper .brand-logo .bta-logo-text {
+		height: 24px;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	.my-header {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+
+@media #{$medium-only} {
 	.my-header .nav-wrapper .brand-logo .bta-logo-text {
 		height: 48px;
 		margin-top: 4px;
@@ -15,3 +32,38 @@
 		padding-right: 24px;
 	}
 }
+
+@media #{$large-and-up} {
+	.my-header .nav-wrapper .brand-logo .bta-logo-text {
+		height: 44px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media #{$extra-large-and-up} {
+	.my-header .nav-wrapper .brand-logo .bta-logo-text {
+		height: 44px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+
+//
+
+
+// .my-nav-wrapper {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+//
+// .my-logo-container {
+// 	flex-grow: 1; // grows to the rest of the container
+// }
+//
+// .my-nav-links {
+// 	flex-shrink: 0;
+// }

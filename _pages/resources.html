@@ -12,25 +12,27 @@ include_in_nav: true
 </section>
 
 {% for section in site.data.resources %}
-	<section>
-		<h2>{{section.name}}</h2>
-		<table class="bordered responsive-table my-table">
-			<thead>
-				<tr>
-					{% for h in section.header %}
-						<th>{{ h }}</th>
-					{% endfor %}
-				</tr>
-			</thead>
-			<tbody>
-				{% for row in section.rows %}
+	{% if section.rows.size > 0 %}
+		<div class="section">
+			<h2>{{section.name}}</h2>
+			<table class="bordered responsive-table my-table">
+				<thead>
 					<tr>
-						{% for col in row %}
-						<td>{{ col }}</td>
+						{% for h in section.header %}
+							<th>{{ h }}</th>
 						{% endfor %}
 					</tr>
-				{% endfor %}
-			</tbody>
-		</table>
-	</section>
+				</thead>
+				<tbody>
+					{% for row in section.rows %}
+						<tr>
+							{% for col in row %}
+							<td>{{ col }}</td>
+							{% endfor %}
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	{% endif %}
 {% endfor %}

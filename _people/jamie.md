@@ -4,7 +4,7 @@ shortname: jamie
 name: Jamie Grace Alexander
 position: Writer/ Poet
 email: jamie.grace@bmoretransalliance.com
-phone: 555-555-5555
+phone: 443-567-1873  
 pronouns: They/them/theirs & She/her/hers
 cloudinary_image: people/jamie-3.jpg
 weight: 6

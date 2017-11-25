@@ -4,7 +4,7 @@ shortname: samy
 name: Samy El-noury
 position: Speaker
 email: samy@bmoretransalliance.com
-phone: 555-555-5555
+phone: 917-719-6583
 pronouns: He/him/his
 cloudinary_image: people/samy.jpg
 weight: 5
