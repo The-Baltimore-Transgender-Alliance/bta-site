@@ -5,14 +5,14 @@ layout: default
 <div class="container">
 	<div class="section">
 		<div class="my-person-container">
-			<div class="my-img-block">
+			<div class="my-avatar-block">
 				<img class="my-bg darken-1" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_400,h_400,c_pad,b_auto:border/{{ page.cloudinary_image }}"/>
 			</div>
 			<div class="my-text-block">
-				<div class="my-position"><h6><i class="mdi mdi-account"></i> {{ page.position }}</h6></div>
-				<div class="my-pronouns"><h6><i class="mdi mdi-message"></i> {{ page.pronouns }}</h6></div>
-				<div class="my-phone"><h6><i class="mdi mdi-phone"></i> {{ page.phone }}</h6></div>
-				<div class="my-email"><h6><i class="mdi mdi-email"></i> <a href="mailto:{{ page.email }}"> {{ page.email }}</a></h6></div>
+				<div class="my-info my-position"><i class="mdi mdi-account"></i> {{ page.position }}</div>
+				<div class="my-info my-pronouns"><i class="mdi mdi-message"></i> {{ page.pronouns }}</div>
+				<div class="my-info my-phone"><i class="mdi mdi-phone"></i> {{ page.phone }}</div>
+				<div class="my-info my-email"><i class="mdi mdi-email"></i> <a href="mailto:{{ page.email }}"> {{ page.email }}</a></div>
 			</div>
 		</div>
 	</div>
@@ -21,10 +21,19 @@ layout: default
 	<div class="section">
 		{{ content }}
 	</div>
-	{% if posts_by_author.size >= 1 %}
-	<h5>Latest Posts by {{ page.name }}</h5>
-	<div class="my-latest-posts">
-		{% include latest-posts.html posts=posts_by_author %}
-	</div>
-	{% endif %}
+
 </div>
+{% if posts_by_author.size >= 1 %}
+	<div class="container">
+		<h5>Latest Posts by {{ page.name }}</h5>
+	</div>
+	<div class="my-bg darken-2">
+		<div class="container my-latest-posts">
+			{% include latest-posts.html posts=posts_by_author %}
+			<a class="right-align my-light-blue-text" href="/blog/authors#{{ page.shortname }}">View all posts by {{page.name}}...</a>
+		</div>
+		<div class="container">
+
+		</div>
+	</div>
+{% endif %}

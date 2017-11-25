@@ -11,8 +11,11 @@ address:
  - '2530 North Charles Street'
  - '3rd Floor - Room 1'
  - 'Baltimore, MD 21218'
-
+newsletter_text: 'Subscribe to our newsletter to hear about upcoming events:'
+donate_text: "Support Maryland's largest trans autonomous project. Help get trans folks do advocacy work and get payed."
+volunteer_text: "We have lots of opportunities to work towards a common goal with the trans community."
 donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
+volunteer_link: https://docs.google.com/forms/d/e/1FAIpQLSe58WnG41jcsu0-8iK8-MWjFViCejos5K1_2vBD1kDteJ4WRQ/viewform?usp=sf_link
 cloud_name: bmoretransalliance
 
 

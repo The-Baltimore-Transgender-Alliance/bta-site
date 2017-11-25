@@ -4,6 +4,7 @@
 
 // import everything else
 @import "layout/header";
+@import "layout/footer";
 
 @import "components/latest-posts";
 @import "components/parallax";
@@ -41,6 +42,6 @@ h1.page-title {
 }
 
 .my-top-nav {
-	height: 122px;
-	line-height: 122px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

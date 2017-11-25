@@ -1,130 +1,115 @@
+.my-about-parallax {
+	margin-bottom: 20px;
+}
+
 .my-about-container {
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-}
 
-.my-text-block, .my-img-block, .my-avatar-block {
-	padding-left: 10.5px;
-	padding-right: 10.5px;
-}
-
-.my-text-block {
-	flex-grow: 1; // grows to the rest of the container
-}
-
-.my-text-block .my-subtitle {
-	font-size: 18px;
-	font-weight: 300;
-	font-style: italic;
-	line-height: 26px;
-}
-
-.my-img-block, .my-avatar-block {
-	flex-shrink: 0; // don't shrink when the others grow
-
-	// for children
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.my-img-block img {
-	width: 100%;
-}
-
-.my-avatar-block img {
-	border-radius: 50% !important;
-}
-
-.my-person .my-avatar-block img {
-	padding: 12px;
-}
-
-.my-org .my-avatar-block img {
-	padding: 24px;
-}
-
-.my-about-parallax {
-	margin-bottom: 20px;
-}
-
-@media #{$small-and-down} {
-	.my-about-container {
-		flex-wrap: wrap;
+	.my-text-block, .my-img-block, .my-avatar-block {
+		padding-left: 10.5px;
+		padding-right: 10.5px;
 	}
-	.my-avatar-block {
-		flex-basis: percentage(12/12);
+
+	.my-text-block {
+		flex-grow: 1; // grows to the rest of the container
 	}
-	.my-avatar-block img {
-		max-width: 80%;
+
+	.my-text-block .my-subtitle {
+		font-size: 18px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 26px;
 	}
-	.my-img-block {
-		flex-basis: percentage(12/12);
+
+	.my-img-block, .my-avatar-block {
+		flex-shrink: 0; // don't shrink when the others grow
+
+		// for children
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
+
 	.my-img-block img {
-		max-width: 60%;
+		width: 100%;
 	}
-}
 
-@media #{$medium-only} {
-	.my-avatar-block {
-		flex-basis: percentage(4/12);
-	}
 	.my-avatar-block img {
-		max-width: 90%;
+		border-radius: 50% !important;
 	}
-	.my-img-block {
-		flex-basis: percentage(4/12);
-	}
-	.my-img-block img {
-		max-width: 80%;
-	}
-}
 
-@media #{$large-and-up} {
-	.my-avatar-block {
-		flex-basis: percentage(3/12);
+	&.my-person .my-avatar-block img {
+		padding: 12px;
 	}
-	.my-avatar-block img {
-		max-width: 80%;
+
+	.my-org .my-avatar-block img {
+		padding: 24px;
 	}
-	.my-img-block {
-		flex-basis: percentage(3/12);
+
+	@media #{$small-and-down} {
+		flex-wrap: wrap; // this just applies to my-about-container
+
+		.my-avatar-block {
+			flex-basis: percentage(12/12);
+		}
+		.my-avatar-block img {
+			max-width: 80%;
+		}
+		.my-img-block {
+			flex-basis: percentage(12/12);
+		}
+		.my-img-block img {
+			max-width: 60%;
+		}
 	}
-	.my-img-block img {
-		max-width: 80%;
+
+	@media #{$medium-only} {
+		.my-avatar-block {
+			flex-basis: percentage(4/12);
+		}
+		.my-avatar-block img {
+			max-width: 90%;
+		}
+		.my-img-block {
+			flex-basis: percentage(4/12);
+		}
+		.my-img-block img {
+			max-width: 80%;
+		}
 	}
-}
 
-@media #{$extra-large-and-up} {
-	.my-avatar-block {
-		flex-basis: percentage(2/12);
+	@media #{$large-and-up} {
+		.my-avatar-block {
+			flex-basis: percentage(3/12);
+		}
+		.my-avatar-block img {
+			max-width: 80%;
+		}
+		.my-img-block {
+			flex-basis: percentage(3/12);
+		}
+		.my-img-block img {
+			max-width: 80%;
+		}
 	}
-	.my-avatar-block img {
-		max-width: 90%;
+
+	@media #{$extra-large-and-up} {
+		.my-avatar-block {
+			flex-basis: percentage(2/12);
+		}
+		.my-avatar-block img {
+			max-width: 90%;
+		}
+		.my-img-block {
+			flex-basis: percentage(2/12);
+		}
+		.my-img-block img {
+			max-width: 90%;
+		}
 	}
-	.my-img-block {
-		flex-basis: percentage(2/12);
-	}
-	.my-img-block img {
-		max-width: 90%;
-	}
-}
-
-
-
-
-
-
-
-.my-org-card .card-image img {
-	max-width: 200px !important;
-	max-height: 200px !important;
-	padding: 24px;
-	border-radius: 50% !important;
-	height: auto !important;
 }

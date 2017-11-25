@@ -1,0 +1,30 @@
+.my-footer {
+
+	.my-major-col{
+		padding-left: 10px;
+		padding-right: 10px;
+		.row {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		label {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	.my-nav-links {
+			list-style-type: none;
+	}
+
+	.my-connect, .my-nav-links {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.my-logo-container img {
+		max-width: 100%;
+		// pad-left:5%;
+		// pad-right:5%;
+	}
+}
