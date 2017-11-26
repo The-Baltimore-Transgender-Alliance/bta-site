@@ -169,7 +169,8 @@
 		<p>TransYnc Mission is to unify, and empower trans people of youth and young adult ages 11-26 years of age, to restore rebuild, and reform a community of people who have been left out of every social relm. this is a organization socially geared to the development of our Trans youth and young adults. with a break down between the two ages.11- 15 years of age, ages 16-20 years of age, and 21-26 years of age.</p>
 
 
-	<footer class="page-footer my-footer my-black lighten-1 z-depth-2">
+	
+<footer class="page-footer my-footer my-black lighten-1 z-depth-2">
 	<div class="container">
 
 		<div class="row">
@@ -284,19 +285,22 @@
 					</p>
 				</div>
 
-				<div class="input-field row">
-					<input placeholder="Avery Smith" id="name" type="text" class="validate">
-					<label for="name">Name</label>
-				</div>
+				<form action="http://sendy.bmoretransalliance.com/subscribe" method="POST" accept-charset="utf-8">
 
-				<div class="input-field row">
-					<input placeholder="avery.smith@example.com" id="email" type="text" class="validate">
-					<label for="email">Email</label>
-				</div>
+					<div class="input-field row">
+						<label for="name">Name</label>
+						<input placeholder="Avery Smith" type="text" name="name" id="name"/>
+					</div>
+					<div class="input-field row">
+						<label for="email">Email</label>
+						<input placeholder="avery.smith@example.com"type="text" name="email" id="email"/>
+					</div>
+					<div class="row">
+						<input type="hidden" name="list" value="3Fv892JXCpb9892OtjEVlPVKoQ"/>
+						<input class="waves-effect waves-light btn my-light-pink lighten-2" type="submit" name="submit" id="submit"/>
+					</div>
 
-				<div class="row">
-					<a class="waves-effect waves-light btn my-light-pink lighten-2">Submit</a>
-				</div>
+				</form>
 
 			</div>
 
@@ -308,8 +312,10 @@
 	<div class="footer-copyright">
 		<div class="container">
 			<div>
-				The Baltimore Transgender Alliance
+				Site designed by
+				<a href="/people/evan">Evan Lori Mahone</a>
 				<span style="text-align: right; float: right">
+				The Baltimore Transgender Alliance //
 				Copyright © 2017
 				</span>
 			</div>

@@ -3,7 +3,7 @@ title: The Baltimore Transgender Alliance
 author: Evan Lori Mahone
 email: evan@bmoretransalliance.com
 description: The Baltimore Transgender Alliance's Home Page on the Web
-
+site_github_link: http://github.com/The-Baltimore-Transgender-Alliance/bta-site
 company: The Baltimore Transgender Alliance
 summary: 'We work to uplift the voices of transgender and gender non-conforming people in Baltimore City and continually center our community’s needs in broader political conversations.'
 copyright_year: 2017
@@ -16,6 +16,11 @@ donate_text: "Support Maryland's largest trans autonomous project. Help get tran
 volunteer_text: "We have lots of opportunities to work towards a common goal with the trans community."
 donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
 volunteer_link: https://docs.google.com/forms/d/e/1FAIpQLSe58WnG41jcsu0-8iK8-MWjFViCejos5K1_2vBD1kDteJ4WRQ/viewform?usp=sf_link
+subscribe_link: http://sendy.bmoretransalliance.com/subscribe
+subscribe_list: 3Fv892JXCpb9892OtjEVlPVKoQ
+name_placeholder: Avery Smith
+email_placeholder: avery.smith@example.com
+
 cloud_name: bmoretransalliance
 
 

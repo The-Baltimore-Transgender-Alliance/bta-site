@@ -1,3 +1,4 @@
+{% assign author = site.people | where_exp:"person","person.shortname == 'evan'" | first %}
 <footer class="page-footer my-footer my-black lighten-1 z-depth-2">
 	<div class="container">
 
@@ -78,19 +79,22 @@
 					</p>
 				</div>
 
-				<div class="input-field row">
-					<input placeholder="Avery Smith" id="name" type="text" class="validate">
-					<label for="name">Name</label>
-				</div>
+				<form action="{{ site.subscribe_link }}" method="POST" accept-charset="utf-8">
 
-				<div class="input-field row">
-					<input placeholder="avery.smith@example.com" id="email" type="text" class="validate">
-					<label for="email">Email</label>
-				</div>
+					<div class="input-field row">
+						<label for="name">Name</label>
+						<input placeholder="{{ site.name_placeholder }}" type="text" name="name" id="name"/>
+					</div>
+					<div class="input-field row">
+						<label for="email">Email</label>
+						<input placeholder="{{ site.email_placeholder }}"type="text" name="email" id="email"/>
+					</div>
+					<div class="row">
+						<input type="hidden" name="list" value="{{ site.subscribe_list }}"/>
+						<input class="waves-effect waves-light btn my-light-pink lighten-2" type="submit" name="submit" id="submit"/>
+					</div>
 
-				<div class="row">
-					<a class="waves-effect waves-light btn my-light-pink lighten-2">Submit</a>
-				</div>
+				</form>
 
 			</div>
 
@@ -102,8 +106,10 @@
 	<div class="footer-copyright">
 		<div class="container">
 			<div>
-				{{ site.company }}
+				Site designed by
+				<a href="{{ author.url }}">{{ author.name }}</a>
 				<span style="text-align: right; float: right">
+				{{ site.company }} //
 				Copyright © {{ site.copyright_year }}
 				</span>
 			</div>

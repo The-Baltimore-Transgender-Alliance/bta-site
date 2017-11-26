@@ -2,6 +2,7 @@
 layout: default
 ---
 {% include top-nav.html title=page.name %}
+{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
 <div class="container">
 	<div class="section">
 		<div class="my-person-container">
@@ -16,7 +17,6 @@ layout: default
 			</div>
 		</div>
 	</div>
-	{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
 	<div class="divider"></div>
 	<div class="section">
 		{{ content }}
