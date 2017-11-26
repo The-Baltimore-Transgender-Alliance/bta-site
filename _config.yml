@@ -60,10 +60,10 @@ fetch_resources_data: true
 collections:
   people:
    output: true
-   permalink: /:collection/{:slug}
+   permalink: /:collection/{:slug}.html
   orgs:
    output: true
-   permalink: /:collection/{:slug}
+   permalink: /:collection/{:slug}.html
   projects:
    name: Example
    email: example@example.com
