@@ -1,23 +1,23 @@
 - folder: miscellaneous
   weight: 1
-  artists::
+  artists:
    - uncredited
 
 - folder: trans-uprising
   weight: 2
-  artists::
+  artists:
    - black-trans-men-inc
    - sharon-black
    - uncredited
 
 - folder: pride-2015
   weight: 3
-  artists::
+  artists:
    - antwon-j-thompson
 
 - folder: tmor-2015
   weight: 4
-  artists::
+  artists:
    - bethany-henderson
    - brenda-dorsch-ibutu
    - dre-cortes
@@ -31,40 +31,40 @@
 
 - folder: turn-up-4-life
   weight: 5
-  artists::
+  artists:
    - valerie-paulsgrove
 
 
 - folder: stop-union-busting-at-chase-brexton
   weight: 6
-  artists::
+  artists:
    - jay-mallin
    - jen-fischetti
    - kelly-valdez
 
-- folder: crystal-edmonds-memorial
+- folder: crystal-edmonds-vigil
   weight: 7
   artists:
    - rahne-alexander
 
 - folder: rally-for-trans-students
   weight: 8
-  artists::
+  artists:
    - evan-lori-mahone
    - megan-kenny
    - monica-stevens
 
-- folder: alphonza-watson-memorial
+- folder: alphonza-watson-vigil
   weight: 9
   artists:
    - evan-lori-mahone
 
 - folder: pride-2017
   weight: 10
-  artists::
+  artists:
    - aryn-p
 
 - folder: tmor-2017
   weight: 11
-  artists::
+  artists:
    - evan-lori-mahone

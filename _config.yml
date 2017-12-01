@@ -37,6 +37,12 @@ include:
 
 exclude:
  - vendor
+ - config
+ - lib
+ - Rakefile
+ - Procfile
+ - Gemfile
+ - Gemfile.lock
 
 # Explicitly turn off the old code
 paginate: nil

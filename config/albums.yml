@@ -1,0 +1,35 @@
+- key: miscellaneous
+  weight: 1
+
+- key: trans-uprising
+  weight: 2
+
+- key: pride-2015
+  weight: 3
+
+- key: tmor-2015
+  title: TMOR 2015
+  weight: 4
+
+- key: turn-up-4-life
+  weight: 5
+
+
+- key: stop-union-busting-at-chase-brexton
+  weight: 6
+
+- key: crystal-edmonds-vigil
+  weight: 7
+
+- key: rally-for-trans-students
+  weight: 8
+
+- key: alphonza-watson-vigil
+  weight: 9
+
+- key: pride-2017
+  weight: 10
+
+- key: tmor-2017
+  title: TMOR 2017
+  weight: 11

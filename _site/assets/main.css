@@ -9455,8 +9455,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-size: 10px !important;
 }
 
-.my-img-box {
+.my-gallery-img {
   padding: 0 !important;
+  width: 100%;
+}
+
+.material-placeholder {
+  display: inline-block;
 }
 
 .my-project-card .card-title {

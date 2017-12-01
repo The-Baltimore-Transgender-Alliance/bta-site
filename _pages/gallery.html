@@ -1,0 +1,19 @@
+---
+layout: page
+title: Gallery
+permalink: /gallery/
+---
+
+
+{% for album in site.data.gallery %}
+<div class="section">
+	<h2>{{ album.folder }}</h2>
+	<div>
+	{% for image in album.images %}
+		<div class="my-gallery-img-container">
+			<img class="my-gallery-img materialboxed" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_1920,h_1080,c_limit/{{ image.public_id }}.{{ image.format }}"/>
+		</div>
+	{% endfor %}
+	</div>
+</div>
+{% endfor %}

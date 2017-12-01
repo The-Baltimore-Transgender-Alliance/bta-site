@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% include top-nav.html title=page.title %}
+<div class="container">
+	{% for image in page.images %}
+		<div class="my-gallery-img-container">
+			<img class="my-gallery-img materialboxed" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_1920,h_1080,c_limit/{{ image.public_id }}.{{ image.format }}"/>
+		</div>
+	{% endfor %}
+</div>
