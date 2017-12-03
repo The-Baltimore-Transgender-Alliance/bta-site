@@ -9455,13 +9455,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-size: 10px !important;
 }
 
-.my-gallery-img {
-  padding: 0 !important;
-  width: 100%;
+.my-album-container .my-grid-image--3x2 {
+  width: 30%;
 }
-
-.material-placeholder {
-  display: inline-block;
+.my-album-container .my-grid-image--4x3 {
+  width: 40%;
+}
+.my-album-container .my-grid-image--2x3 {
+  width: 20%;
+}
+.my-album-container .my-grid-image--3x4 {
+  width: 30%;
+}
+.my-album-container .my-grid-image--3x1 {
+  width: 30%;
+}
+.my-album-container .my-grid-image--1x1 {
+  width: 10%;
 }
 
 .my-project-card .card-title {

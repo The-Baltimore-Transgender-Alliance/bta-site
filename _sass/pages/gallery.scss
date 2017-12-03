@@ -1,10 +1,49 @@
-.my-gallery-img {
-	padding: 0 !important;
-	width: 100%;
+.my-album-container {
+
+	.my-row-h1 {
+		height: 100px;
+	}
+
+	.my-row-h2 {
+		height: 200px;
+	}
+
+	.my-row-h3 {
+		height: 300px;
+	}
+
+	.my-row-h4 {
+		height: 400px;
+	}
+	.my-grid-image--3\/2 {
+		width: 30%;
+	}
+
+	.my-grid-image--4\/3 {
+		width: 40%;
+	}
+
+	.my-grid-image--2\/3 {
+		width: 20%;
+	}
+
+	.my-grid-image--3\/4 {
+		width: 30%;
+	}
+
+	.my-grid-image--3\/1 {
+		width: 30%;
+	}
+
+	.my-grid-image--1\/1 {
+		width: 10%;
+	}
+
 }
 
-.material-placeholder {
-	display: inline-block;
-}
 
-.my-gallery-img-container {}
+// .material-placeholder {
+// 	display: inline-block;
+// }
+//
+// .my-gallery-img-container {}

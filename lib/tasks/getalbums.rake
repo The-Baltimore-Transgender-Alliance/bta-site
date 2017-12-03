@@ -50,14 +50,15 @@ task :get_albums do
 		# get a titleized artist
 		d['images'].map! { |i| i.merge({ 'artist' => i['artist-key'].titleize }) }
 		# determine the best fit aspect ratio for the picture
-		d['images'].map! { |i| i.merge({ 'ratio' => ImageGrid.best_fit(i['width'], i['height']) }) }
+		d['images'].map! { |i| i.merge({ 'ratio' => ImageGrid.best_fit( Rational(i['width'],i['height']) ) }) }
+		# get the max crop for the w/h and ratio
+		d['images'].map! { |i| i.merge( ImageGrid.crop_to_ratio( i['ratio'], i['width'],i['height'] ) ) }
 		d
 	end
-	pp(data)
-end
-
-task :t do
-	a = "folder/album/folder/bigbig/sdsdsf.jpg"
-	folder = 'folder'
-	get_artist(a,folder)
+	# write to JSON
+	exists = File.exists? File.expand_path(output_path)
+	if (not exists)
+		FileUtils.mkdir_p File.dirname(output_path)
+	end
+	File.open(output_path, "w") { |f| f.write(data.to_json) }
 end

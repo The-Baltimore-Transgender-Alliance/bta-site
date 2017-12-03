@@ -23,26 +23,26 @@ module Jekyll
 		safe true
 
 		@@data_rel_dir = "_data"
-		@@gallery_name = "gallery.json"
+		@@data_name = "albums.json"
 		@@albums_rel_dir = "albums"
 		@@album_ext = ".html"
 
 		def generate(site)
 			gallery = read_gallery_json(site.source)
-			data = { 'tag' => 'A big title', 'foo' => 'foobar' }
 			gallery.each do |album|
-				site.pages << AlbumPage.new(site, site.source, @@albums_rel_dir, album['folder'] + @@album_ext, album)
+				puts('hi')
+				site.pages << AlbumPage.new(site, site.source, @@albums_rel_dir, album['key'] + @@album_ext, album)
 			end
 		end
 
 		def read_gallery_json(base)
-			gallery_path = File.join(base, @@data_rel_dir, @@gallery_name)
+			gallery_path = File.join(base, @@data_rel_dir, @@data_name)
 			if File.exists? File.expand_path(gallery_path)
 				file = File.read(gallery_path)
 				begin
 					data = JSON.parse(file)
 				rescue JSON::ParserError => e
-					puts(file + "doesn't contain valid json!")
+					puts(e)
 				end
 				return data
 			else
