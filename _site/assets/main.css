@@ -9457,80 +9457,91 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .my-album-grid {
   display: flex;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-right: .5em;
-  padding-left: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   flex-wrap: wrap;
 }
-
-.my-grid-col {
-  padding-left: .25em;
-  padding-right: .25em;
+.my-album-grid .my-grid-col {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
-
-.my-grid-col.w1 {
+.my-album-grid .my-grid-col.w-1 {
   flex-basis: 8.3333333333%;
 }
-
-.my-grid-col.w2 {
-  flex-basis: 16.6666666667%;
-}
-
-.my-grid-col.w3 {
-  flex-basis: 25%;
-}
-
-.my-grid-col.w4 {
-  flex-basis: 33.3333333333%;
-}
-
-.my-grid-col.off-1 {
+.my-album-grid .my-grid-col.off-1 {
   margin-right: 8.3333333333%;
 }
-
-.my-grid-col.off-2 {
+.my-album-grid .my-grid-col.w-2 {
+  flex-basis: 16.6666666667%;
+}
+.my-album-grid .my-grid-col.off-2 {
   margin-right: 16.6666666667%;
 }
-
-.my-grid-col.off-3 {
+.my-album-grid .my-grid-col.w-3 {
+  flex-basis: 25%;
+}
+.my-album-grid .my-grid-col.off-3 {
   margin-right: 25%;
 }
-
-.my-grid-col.off-4 {
+.my-album-grid .my-grid-col.w-4 {
+  flex-basis: 33.3333333333%;
+}
+.my-album-grid .my-grid-col.off-4 {
   margin-right: 33.3333333333%;
 }
-
-.my-grid-col.off-5 {
+.my-album-grid .my-grid-col.w-5 {
+  flex-basis: 41.6666666667%;
+}
+.my-album-grid .my-grid-col.off-5 {
   margin-right: 41.6666666667%;
 }
-
-.my-grid-col.off-6 {
+.my-album-grid .my-grid-col.w-6 {
+  flex-basis: 50%;
+}
+.my-album-grid .my-grid-col.off-6 {
   margin-right: 50%;
 }
-
-.my-grid-col.off-7 {
+.my-album-grid .my-grid-col.w-7 {
+  flex-basis: 58.3333333333%;
+}
+.my-album-grid .my-grid-col.off-7 {
   margin-right: 58.3333333333%;
 }
-
-.my-grid-col.off-8 {
+.my-album-grid .my-grid-col.w-8 {
+  flex-basis: 66.6666666667%;
+}
+.my-album-grid .my-grid-col.off-8 {
   margin-right: 66.6666666667%;
 }
-
-.my-grid-col.off-9 {
+.my-album-grid .my-grid-col.w-9 {
+  flex-basis: 75%;
+}
+.my-album-grid .my-grid-col.off-9 {
   margin-right: 75%;
 }
-
-.my-grid-col.off-10 {
+.my-album-grid .my-grid-col.w-10 {
+  flex-basis: 83.3333333333%;
+}
+.my-album-grid .my-grid-col.off-10 {
   margin-right: 83.3333333333%;
 }
-
-.my-grid-col.off-11 {
+.my-album-grid .my-grid-col.w-11 {
+  flex-basis: 91.6666666667%;
+}
+.my-album-grid .my-grid-col.off-11 {
   margin-right: 91.6666666667%;
 }
-
-.my-grid-col img {
+.my-album-grid .my-grid-col.w-12 {
+  flex-basis: 100%;
+}
+.my-album-grid .my-grid-col.off-12 {
+  margin-right: 100%;
+}
+.my-album-grid .my-grid-col img {
   width: 100%;
+}
+.my-album-grid .my-grid-col .material-placeholder {
+  display: inline-block;
 }
 
 .my-project-card .card-title {
