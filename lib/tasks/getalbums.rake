@@ -10,6 +10,7 @@ data_dir = "_data"
 config_dir = "config"
 input_name = "albums.yml"
 output_name = "albums.json"
+row_width_l = 12
 
 input_path = File.join(config_dir, input_name)
 output_path = File.join(data_dir, output_name)
@@ -45,6 +46,9 @@ task :get_albums do
 	data.map! { |d| d.merge({ 'images' => query_folder(d['key']) }) }
 
 	data.map! do |d|
+		#make sure dims are ints
+		d['images'].each {|i| i['width'] = i['width'].to_i}
+		d['images'].each {|i| i['height'] = i['height'].to_i}
 		# determine the artists from the folder path
 		d['images'].map! { |i| i.merge({ 'artist-key' => get_artist(i['public_id'], d['key']) })}
 		# get a titleized artist
@@ -53,6 +57,11 @@ task :get_albums do
 		d['images'].map! { |i| i.merge({ 'ratio' => ImageGrid.best_fit( Rational(i['width'],i['height']) ) }) }
 		# get the max crop for the w/h and ratio
 		d['images'].map! { |i| i.merge( ImageGrid.crop_to_ratio( i['ratio'], i['width'],i['height'] ) ) }
+		# For the large grid
+		grid_l =  ImageGrid.grid_ratios(d['images'].map { |i| i['ratio'] }, row_width_l)
+		d['images'].map!.with_index {|i,index| i.merge(grid_l[index])}
+		# want seperate w and h
+		d['images'].map! {|i| i.merge({'ratio_w' => i['ratio'].numerator, 'ratio_h' => i['ratio'].denominator})}
 		d
 	end
 	# write to JSON

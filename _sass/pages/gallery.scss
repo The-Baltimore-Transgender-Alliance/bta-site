@@ -1,46 +1,80 @@
-.my-album-container {
-
-	.my-row-h1 {
-		height: 100px;
-	}
-
-	.my-row-h2 {
-		height: 200px;
-	}
-
-	.my-row-h3 {
-		height: 300px;
-	}
-
-	.my-row-h4 {
-		height: 400px;
-	}
-	.my-grid-image--3\/2 {
-		width: 30%;
-	}
-
-	.my-grid-image--4\/3 {
-		width: 40%;
-	}
-
-	.my-grid-image--2\/3 {
-		width: 20%;
-	}
-
-	.my-grid-image--3\/4 {
-		width: 30%;
-	}
-
-	.my-grid-image--3\/1 {
-		width: 30%;
-	}
-
-	.my-grid-image--1\/1 {
-		width: 10%;
-	}
-
+.my-album-grid {
+	display: flex;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	padding-right: .5em;
+	padding-left: .5em;
+	flex-wrap: wrap;
 }
 
+.my-grid-col {
+	padding-left: .25em;
+	padding-right: .25em;
+}
+
+.my-grid-col.w1 {
+	flex-basis: percentage(1/12);
+}
+
+.my-grid-col.w2 {
+	flex-basis: percentage(2/12);
+}
+
+.my-grid-col.w3 {
+	flex-basis: percentage(3/12);
+}
+
+.my-grid-col.w4 {
+	flex-basis: percentage(4/12);
+}
+
+.my-grid-col.off-1 {
+	margin-right: percentage(1/12)
+}
+
+.my-grid-col.off-2 {
+	margin-right: percentage(2/12)
+}
+
+.my-grid-col.off-3 {
+	margin-right: percentage(3/12)
+}
+
+.my-grid-col.off-4 {
+	margin-right: percentage(4/12)
+}
+
+.my-grid-col.off-5 {
+	margin-right: percentage(5/12)
+}
+
+.my-grid-col.off-6 {
+	margin-right: percentage(6/12)
+}
+
+.my-grid-col.off-7 {
+	margin-right: percentage(7/12)
+}
+
+.my-grid-col.off-8 {
+	margin-right: percentage(8/12)
+}
+
+.my-grid-col.off-9 {
+	margin-right: percentage(9/12)
+}
+
+.my-grid-col.off-10 {
+	margin-right: percentage(10/12)
+}
+
+.my-grid-col.off-11 {
+	margin-right: percentage(11/12)
+}
+
+.my-grid-col img {
+	width: 100%;
+}
 
 // .material-placeholder {
 // 	display: inline-block;

@@ -2,18 +2,10 @@
 layout: default
 ---
 {% include top-nav.html title=page.title %}
-<!-- {% assign h1 = page.images | where_exp: "i", "i.ratio == '1/1' || i.ratio == '3/1'" %}
-{% assign h2 = page.images | where_exp: "i", "i.ratio == '3/2'" %} -->
-<!-- {% assign h3 = page.images | where_exp: "i", "i.ratio == '4/3' or i.ratio == '2/3'" %} -->
-<!-- {% assign h4 = page.images | where_exp: "i", "i.ratio == '3/4'" %} -->
-<!-- <div class="container my-album-container">
-	<div class="row my-row-h1"></div>
-	<div class="row my-row-h2"></div>
-	<div class="row my-row-h3">
-		<!-- {% for i in h3 %}
-			<img class="my-grid-image--{{i.ratio}}" src="https://res.cloudinary.com/{{site.cloud_name}}/x_{{i.crop_left}},y_{{i.crop_top}},w_{{i.crop_width}},h_{{i.crop_height}},c_crop/{{i.public_id}}.{{i.format}}"/>
-		{% endfor %} -->
-	</div>
-	<div class="row my-row-h4"></div>
-
-</div> -->
+<div class="container my-album-grid">
+	{% for i in page.images %}
+		<div class="my-grid-col w{{i.ratio_w}} h{{i.ratio_h}} off-{{i.offset}}" style="order:{{i.order}};">
+			<img src="https://res.cloudinary.com/{{site.cloud_name}}/x_{{i.crop_left}},y_{{i.crop_top}},w_{{i.crop_width}},h_{{i.crop_height}},c_crop/{{i.public_id}}.{{i.format}}"/>
+		</div>
+	{% endfor %}
+</div>

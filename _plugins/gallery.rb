@@ -30,7 +30,6 @@ module Jekyll
 		def generate(site)
 			gallery = read_gallery_json(site.source)
 			gallery.each do |album|
-				puts('hi')
 				site.pages << AlbumPage.new(site, site.source, @@albums_rel_dir, album['key'] + @@album_ext, album)
 			end
 		end
