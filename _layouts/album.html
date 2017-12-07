@@ -10,9 +10,9 @@ layout: default
 {% include top-nav.html title=page.title %}
 <div class="container my-album-grid">
 	{% for i in page.images %}
-		<div class="my-grid-col w-{{i.ratio_w}} off-{{i.offset}}" style="order:{{i.order}};">
+		<div class="my-grid-col w-{{i.lrg_grid.ratio_w}} off-{{i.lrg_grid.offset}}" style="order:{{i.lrg_grid.order}};">
 			{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
-			{% assign t1 = "x_" | append: i.crop_left | append: ",y_" | append: i.crop_top | append: ",w_" | append: i.crop_width | append: ",h_" | append: i.crop_height | append: ",c_crop/" %}
+			{% assign t1 = "x_" | append: i.lrg_grid.crop.left | append: ",y_" | append: i.lrg_grid.crop.top | append: ",w_" | append: i.lrg_grid.crop.width | append: ",h_" | append: i.lrg_grid.crop.height | append: ",c_crop/" %}
 			{% assign t2 = "w_1200,c_scale/" %}
 			{% assign watermark = "l_text:roboto_" | append: wm_font_s | append: ":" | append: "Photographer: " | append: i.artist | append: ",g_south_west,x_0.02,y_0.02,co_white/" %}
 			{% assign tail = i.public_id | append: "." | append: i.format %}

@@ -1,0 +1,30 @@
+$row-width: 12;
+$col-padding: (1/4) * 1em;
+
+.my-album-grid {
+	display: flex;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	flex-wrap: wrap;
+
+	.my-grid-col {
+		padding-left: $col-padding;
+		padding-right: $col-padding;
+
+		@for $i from 1 through $row-width {
+			&.w-#{$i} {
+				flex-basis: percentage($i/$row-width);
+			}
+			&.off-#{$i} {
+				margin-right: percentage($i/$row-width);
+			}
+		}
+
+		img {
+			width:100%;
+		}
+		.material-placeholder {
+			display: inline-block;
+		}
+	}
+}

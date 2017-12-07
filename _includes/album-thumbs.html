@@ -1,0 +1,17 @@
+{% assign num = include.images | size %}
+
+<div class="my-album-thumbs">
+	{% if num >= 3 %}
+		<div class="my-item-4"><img src="{{head | append: t1 | append: include.images[0].public_id | append: "." | append: include.images[0].format}}"/></div>
+		<div class="my-item-4"><img src="{{head | append: t1 | append: include.images[1].public_id | append: "." | append: include.images[1].format}}"/></div>
+		<div class="my-item-4"><img src="{{head | append: t1 | append: include.images[2].public_id | append: "." | append: include.images[2].format}}"/></div>
+		<div class="my-item-4"><img src="{{head | append: t1 | append: include.images[3].public_id | append: "." | append: include.images[3].format}}"/></div>
+	{% endif %}
+	{% if num == 2 %}
+	{% endif %}
+	{% if num == 1 %}
+		<div class="my-item-1">
+			<img src="{{head | append: t1 | append: include.images[0].public_id | append: "." | append: include.images[0].format}}"/>
+		</div>
+	{% endif %}
+</div>

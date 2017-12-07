@@ -3,17 +3,29 @@ layout: page
 title: Gallery
 permalink: /gallery/
 ---
-
-
-{% for album in site.data.gallery %}
-<div class="section">
-	<h2>{{ album.folder }}</h2>
-	<div>
-	{% for image in album.images %}
-		<div class="my-gallery-img-container">
-			<img class="my-gallery-img materialboxed" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_1920,h_1080,c_limit/{{ image.public_id }}.{{ image.format }}"/>
+{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
+{% assign t1 = "g_auto,c_thumb,w_400,h_400/" %}
+{% assign num_rows = site.data.albums | size | divided_by: 2.0 | ceil %}
+<div class="my-gallery">
+	{% for i in (1..num_rows) %}
+		{% assign offset = forloop.index0 | times: 3 %}
+		<div class="row my-album-thumb-row">
+			{% for album in site.data.albums limit:3 offset:offset %}
+				<div class="col s4">
+					{% include album-thumbs.html images = album.images %}
+				</div>
+			{% endfor %}
+		</div>
+		<div class="row my-album-titles-row">
+			{% for album in site.data.albums limit:3 offset:offset %}
+				<div class="col s4">
+					<nav>
+						<div class="nav-wrapper my-black lighten-2">
+							<a href="/albums/{{album.key}}" class="brand-logo center">{{album.title}}</a>
+						</div>
+					</nav>
+				</div>
+			{% endfor %}
 		</div>
 	{% endfor %}
-	</div>
 </div>
-{% endfor %}
