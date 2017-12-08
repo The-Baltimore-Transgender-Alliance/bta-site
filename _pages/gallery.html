@@ -5,27 +5,10 @@ permalink: /gallery/
 ---
 {% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
 {% assign t1 = "g_auto,c_thumb,w_400,h_400/" %}
-{% assign num_rows = site.data.albums | size | divided_by: 2.0 | ceil %}
 <div class="my-gallery">
-	{% for i in (1..num_rows) %}
-		{% assign offset = forloop.index0 | times: 3 %}
-		<div class="row my-album-thumb-row">
-			{% for album in site.data.albums limit:3 offset:offset %}
-				<div class="col s4">
-					{% include album-thumbs.html images = album.images %}
-				</div>
-			{% endfor %}
-		</div>
-		<div class="row my-album-titles-row">
-			{% for album in site.data.albums limit:3 offset:offset %}
-				<div class="col s4">
-					<nav>
-						<div class="nav-wrapper my-black lighten-2">
-							<a href="/albums/{{album.key}}" class="brand-logo center">{{album.title}}</a>
-						</div>
-					</nav>
-				</div>
-			{% endfor %}
+	{% for album in site.data.albums %}
+		<div class="my-album">
+			{% include album-thumbs.html album = album %}
 		</div>
 	{% endfor %}
 </div>
