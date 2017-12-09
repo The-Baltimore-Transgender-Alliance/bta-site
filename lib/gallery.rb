@@ -16,6 +16,7 @@ module Gallery
 		Rational(3,1),
 		Rational(1,1)
 	]
+	@@packing_n_permutations = 1000;
 	@@sm_ratios = [
 		Rational(1,1),
 		Rational(3,2),
@@ -88,11 +89,27 @@ module Gallery
 			end
 			# get just the ratios to determine the grid
 			ratios = d['images'].map {|img| img['lrg_grid']['ratio']}
-			puts(ratios)
 			# get the grid
 			grid_data =  ImageGrid.get_row_col_grid(ratios,@@lrg_grid_w)
-			puts(grid_data)
 			d['images'].each_with_index {|img, i| img['lrg_grid'] = img['lrg_grid'].merge(grid_data[i])}
+			d
+		end
+		data
+	end
+
+	def Gallery.get_sm_grid(data)
+		data.map! do |d|
+			d['images'].map! do |img|
+				ratio = ImageGrid.best_fit(Rational(img['width'],img['height']),@@sm_ratios)
+				crop = ImageGrid.crop_to_ratio(ratio, img['width'],img['height'] )
+				obj = {'ratio' => ratio, 'ratio_w' => ratio.numerator, 'ratio_h' => ratio.denominator, crop: crop}
+				img.merge({'sm_grid' => obj})
+			end
+			heights = d['images'].map {|img| img['sm_grid']['ratio'].denominator}
+			grid_data = ImageGrid.get_2_col_packing(heights, @@packing_n_permutations)
+			d['images'].each_with_index do |img, i|
+				img['sm_grid'] = img['sm_grid'].merge(grid_data['result'][i])
+			end
 			d
 		end
 		data

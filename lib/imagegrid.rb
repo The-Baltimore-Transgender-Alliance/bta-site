@@ -126,6 +126,34 @@ module ImageGrid
 		res
 	end
 
+	def ImageGrid.get_2_col_packing(heights, n_permutations)
+		items = heights.map.with_index {|h, i| {'h' => h, 'index' => i}}
+
+		permutations = Array.new(n_permutations) do |i|
+			slice = i.modulo(items.length)
+			shuf = items.shuffle
+			[shuf[0..slice],shuf[(slice + 1)..-1]]
+		end
+
+		scores = permutations.map do |p|
+			col1 = p[0].reduce(0) {|sum,item| sum + item['h']}
+			col2 = p[1].reduce(0) {|sum,item| sum + item['h']}
+			(col1 - col2).abs
+		end
+		min_score = scores.min
+		min_perm = permutations[scores.rindex(min_score)]
+
+		result = []
+		min_perm[0].each_with_index do |p, i|
+			result[p['index']] = {'col' => 0, 'order' => i}
+		end
+		min_perm[1].each_with_index do |p, i|
+			result[p['index']] = {'col' => 1, 'order' => i}
+		end
+
+		{'score' => min_score, 'result' => result}
+	end
+
 	private
 	def ImageGrid.max_size(ratio, width, height)
 		ratio_width = ratio.numerator

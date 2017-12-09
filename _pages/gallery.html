@@ -3,12 +3,21 @@ layout: page
 title: Gallery
 permalink: /gallery/
 ---
-{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
-{% assign t1 = "g_auto,c_thumb,w_400,h_400/" %}
-<div class="my-gallery">
+<div class="row">
 	{% for album in site.data.albums %}
-		<div class="my-album">
-			{% include album-thumbs.html album = album %}
+		<div class="col xl3 l4 m6 s12">
+			<div class="my-album-card card my-black lighten-1">
+				<div class="card-image">
+					<!-- <img src="https://res.cloudinary.com/{{site.cloud_name}}/{{ album.images[0].public_id }}.{{album.images[0].format}}"/> -->
+					{% include cloudinary-collage.html images = album.images %}
+				</div>
+				<div class="card-content white-text">
+					<span class="card-title">{{ album.title }}</span>
+				</div>
+				<div class="card-action">
+					<a href="/albums/{{album.key}}">Go To Album</a>
+				</div>
+			</div>
 		</div>
 	{% endfor %}
 </div>

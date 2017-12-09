@@ -8,16 +8,48 @@ layout: default
 {% assign wm_font_s = "24" %}
 
 {% include top-nav.html title=page.title %}
-<div class="container my-album-grid">
+<div class="container my-album-grid hide-on-med-and-down">
 	{% for i in page.images %}
 		<div class="my-grid-col w-{{i.lrg_grid.ratio_w}} off-{{i.lrg_grid.offset}}" style="order:{{i.lrg_grid.order}};">
 			{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
 			{% assign t1 = "x_" | append: i.lrg_grid.crop.left | append: ",y_" | append: i.lrg_grid.crop.top | append: ",w_" | append: i.lrg_grid.crop.width | append: ",h_" | append: i.lrg_grid.crop.height | append: ",c_crop/" %}
 			{% assign t2 = "w_1200,c_scale/" %}
-			{% assign watermark = "l_text:roboto_" | append: wm_font_s | append: ":" | append: "Photographer: " | append: i.artist | append: ",g_south_west,x_0.02,y_0.02,co_white/" %}
+			<!-- {% assign watermark = "l_black_bar,g_south,w_" | append: i.lrg_grid.crop.width | append: ",h_72,o_60/" | append: "l_text:roboto_" | append: wm_font_s | append: ":" | append: "Photographer: " | append: i.artist | append: ",g_south_west,x_0.02,y_0.02,co_white/" %} -->
 			{% assign tail = i.public_id | append: "." | append: i.format %}
-			{% assign src = head | append: t1 |  append: t2 |  append: watermark | append: tail %}
+			{% assign src = head | append: t1 |  append: t2 | append: tail %}
 			<img class="materialboxed" src="{{src}}"/>
 		</div>
 	{% endfor %}
+</div>
+
+<div class="container my-sm-album-grid hide-on-large-only">
+	<div class="my-sm-grid-col">
+		{% for i in page.images %}
+			{% if i.sm_grid.col == 0 %}
+				{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
+				{% assign t1 = "x_" | append: i.sm_grid.crop.left | append: ",y_" | append: i.sm_grid.crop.top | append: ",w_" | append: i.sm_grid.crop.width | append: ",h_" | append: i.sm_grid.crop.height | append: ",c_crop/" %}
+				{% assign t2 = "w_1200,c_scale/" %}
+				{% assign tail = i.public_id | append: "." | append: i.format %}
+				{% assign src = head | append: t1 |  append: t2 | append: tail %}
+				<div class="my-sm-grid-item" style="order:{{i.sm_grid.order}};">
+					<img class="materialboxed" src="{{src}}"/>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+	<div class="my-sm-grid-col ">
+		{% for i in page.images %}
+			{% if i.sm_grid.col == 1 %}
+				{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
+				{% assign t1 = "x_" | append: i.sm_grid.crop.left | append: ",y_" | append: i.sm_grid.crop.top | append: ",w_" | append: i.sm_grid.crop.width | append: ",h_" | append: i.sm_grid.crop.height | append: ",c_crop/" %}
+				{% assign t2 = "w_1200,c_scale/" %}
+				{% assign tail = i.public_id | append: "." | append: i.format %}
+				{% assign src = head | append: t1 |  append: t2 | append: tail %}
+				<div class="my-sm-grid-item" style="order:{{i.sm_grid.order}};">
+					<img class="materialboxed" src="{{src}}"/>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+
 </div>

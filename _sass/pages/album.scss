@@ -28,3 +28,30 @@ $col-padding: (1/4) * 1em;
 		}
 	}
 }
+
+.my-sm-album-grid {
+	display: flex;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	.my-sm-grid-col {
+		padding-left: $col-padding;
+		padding-right: $col-padding;
+		flex-basis: percentage(1/2);
+		display: flex;
+		flex-direction: column;
+		.my-sm-grid-item {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	img {
+		flex-basis: 100%;
+		width: 100%;
+	}
+
+	.material-placeholder {
+		display: inline-block;
+	}
+}

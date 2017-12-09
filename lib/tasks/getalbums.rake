@@ -19,5 +19,6 @@ task :get_albums do
 	data = Gallery.format_data(data)
 	# lrg screen grid
 	data = Gallery.get_lrg_grid(data)
+	data = Gallery.get_sm_grid(data)
 	Gallery.write_json(data, output_path)
 end

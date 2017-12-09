@@ -1,0 +1,63 @@
+{% assign collage_w = include.img_size | default: 400 %}
+{% assign collage_h = include.img_size | default: 400 %}
+
+{% assign img_count = include.images | size %}
+
+{% assign url_head = "http://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
+{% assign url_tail = include.images[0].public_id | append: "." | append: include.images[0].format %}
+
+{% assign img_url = "http://via.placeholder.com/400x400" %}
+
+{% if img_count == 1 %}
+	{% assign img_w = collage_w %}
+	{% assign img_h = collage_h %}
+
+	{% assign t1 = "c_thumb,g_faces,w_" | append: img_w | append: ",h_" | append: img_h | append: "/" %}
+	{% assign img_url = url_head | append: t1 | append: url_tail %}
+
+{% endif %}
+
+
+
+
+{% if img_count == 2 %}
+{% endif %}
+
+{% if img_count == 3 %}
+{% endif %}
+
+
+
+{% if img_count >= 4 %}
+	{% assign img_w = collage_w | divided_by: 2 %}
+	{% assign img_h = collage_h | divided_by: 2 %}
+
+	{% assign id2 = include.images[1].public_id | replace: "/", ":" %}
+	{% assign id3 = include.images[2].public_id | replace: "/", ":" %}
+	{% assign id4 = include.images[3].public_id | replace: "/", ":" %}
+
+	{% assign t1 = "c_thumb,g_faces,w_" | append: img_w | append: ",h_" | append: img_h | append: "/" %}
+
+	{% assign t2 = "c_thumb,g_faces,w_" | append: img_w | append: ",h_" | append: img_h | append: "," | append: "l_" | append: id2 | append: "/" %}
+	{% assign l2 = "fl_layer_apply,g_north_west,x_" | append: img_w | append: "/" %}
+
+	{% assign t3 = "c_thumb,g_faces,w_" | append: img_w | append: ",h_" | append: img_h | append: "," | append: "l_" | append: id3 | append: "/" %}
+	{% assign l3 = "fl_layer_apply,g_north_west,y_" | append: img_h | append: "/" %}
+
+	{% assign t4 = "c_thumb,g_faces,w_" | append: img_w | append: ",h_" | append: img_h | append: "," | append: "l_" | append: id4 | append: "/" %}
+	{% assign l4 = "fl_layer_apply,g_north_west,x_" | append: img_w | append: ",y_" | append: img_h |  append: "/" %}
+
+	{% assign img_url = url_head | append: t1 | append: t2 | append: l2 | append: t3 | append: l3 | append: t4 | append: l4 | append: url_tail %}
+{% endif %}
+
+<img class="my-collage" src="{{img_url}}" />
+
+<!-- http://res.cloudinary.com/bmoretransalliance/c_thumb,g_faces,h_200,w_200/
+c_thumb,g_faces,h_200,l_test1,w_200/
+fl_layer_apply,g_north_west,x_200/
+
+c_thumb,g_faces,h_200,l_test2,w_200/
+fl_layer_apply,g_north_west,y_200/
+
+c_thumb,g_faces,h_200,l_test3,w_200/
+fl_layer_apply,g_north_west,x_200,y_200/test4 -->
