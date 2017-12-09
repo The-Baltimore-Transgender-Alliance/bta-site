@@ -1,0 +1,5 @@
+{% assign head = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/" %}
+{% assign t1 = "x_" | append: include.image.sm_grid.crop.left | append: ",y_" | append: include.image.sm_grid.crop.top | append: ",w_" | append: include.image.sm_grid.crop.width | append: ",h_" | append: include.image.sm_grid.crop.height | append: ",c_crop/" %}
+{% assign t2 = "w_1200,c_scale/" %}
+{% assign tail = include.image.public_id | append: "." | append: include.image.format %}
+{% assign src = head | append: t1 |  append: t2 | append: tail %}
