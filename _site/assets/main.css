@@ -9546,8 +9546,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .my-sm-album-grid {
   display: flex;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 .my-sm-album-grid .my-col {
   padding-top: 1em;
@@ -9573,8 +9571,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   width: 100%;
   height: 100%;
 }
-.my-sm-album-grid .material-placeholder {
-  display: inline-block;
+.my-sm-album-grid .my-col .my-row .material-placeholder {
+  display: flex;
+  width: 100%;
+}
+.my-sm-album-grid .my-col .my-row .material-placeholder img.active {
+  border: 0;
 }
 
 .my-project-card .card-title {

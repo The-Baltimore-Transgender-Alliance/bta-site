@@ -12,7 +12,7 @@ layout: default
 	{% for i in page.images %}
 		<div class="my-grid-col w-{{i.lrg_grid.ratio_w}} h-{{i.lrg_grid.ratio_h }} off-{{i.lrg_grid.offset}}" style="order:{{i.lrg_grid.order}};">
 			{% include lrg-grid-img-src.html image = i %}
-			<img class="materialboxed" src="{{src}}"/>
+			<img class="materialboxed" src="{{src}}" data-caption="Photographer: {{i.artist}}"/>
 		</div>
 	{% endfor %}
 </div>
@@ -22,8 +22,8 @@ layout: default
 		{% for i in page.images %}
 			{% if i.sm_grid.col == 0 %}
 				{% include sm-grid-img-src.html image = i %}
-				<div class="my-row h-{{i.sm_grid.ratio_h }}" style="order:{{i.sm_grid.order}};">
-					<img class="" src="{{src}}"/>
+				<div class="my-row h-{{i.sm_grid.ratio_h }}">
+					<img class="materialboxed" src="{{src}}" data-caption="Photographer: {{i.artist}}"/>
 				</div>
 			{% endif %}
 		{% endfor %}
@@ -32,8 +32,8 @@ layout: default
 		{% for i in page.images %}
 			{% if i.sm_grid.col == 1 %}
 				{% include sm-grid-img-src.html image = i %}
-				<div class="my-row h-{{i.sm_grid.ratio_h }}"  style="order:{{i.sm_grid.order}};">
-					<img class="" src="{{src}}"/>
+				<div class="my-row h-{{i.sm_grid.ratio_h }}">
+					<img class="materialboxed" src="{{src}}" data-caption="Photographer: {{i.artist}}"/>
 				</div>
 			{% endif %}
 		{% endfor %}
