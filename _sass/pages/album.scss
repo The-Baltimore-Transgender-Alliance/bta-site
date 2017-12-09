@@ -34,8 +34,8 @@ $sm-grid-col-width: 3;
 
 .my-sm-album-grid {
 	display: flex;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	// padding-top: 1em;
+	// padding-bottom: 1em;
 
 	.my-col {
 		padding-top: $grid-padding*4;
@@ -49,12 +49,6 @@ $sm-grid-col-width: 3;
 			display: flex;
 			margin-top: $grid-padding*-4;
 
-			// @for $i from 1 through $sm-grid-max-ratio-h {
-			// 	&.h-#{$i} {
-			// 		flex-basis: percentage($i/$sm-grid-col-width);
-			// 	}
-			// }
-
 			img {
 				border-left: $grid-padding;
 				border-right: $grid-padding;
@@ -67,22 +61,14 @@ $sm-grid-col-width: 3;
 				width: 100%;
 				height: 100%;
 			}
+
+			.material-placeholder {
+				display: flex;
+				width: 100%;
+				img.active {
+					border: 0;
+				}
+			}
 		}
-	}
-
-	// .my-col {
-	// 	padding-left: $grid-padding;
-	// 	padding-right: $grid-padding;
-	// 	flex-basis: percentage(1/2);
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	.my-sm-grid-item {
-	// 		display: flex;
-	// 		justify-content: center;
-	// 	}
-	// }
-
-	.material-placeholder {
-		display: inline-block;
 	}
 }
