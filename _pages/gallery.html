@@ -3,21 +3,25 @@ layout: page
 title: Gallery
 permalink: /gallery/
 ---
-<div class="row">
-	{% for album in site.data.albums %}
-		<div class="col xl3 l4 m6 s12">
-			<div class="my-album-card card my-black lighten-1">
-				<div class="card-image">
-					<!-- <img src="https://res.cloudinary.com/{{site.cloud_name}}/{{ album.images[0].public_id }}.{{album.images[0].format}}"/> -->
-					{% include cloudinary-collage.html images = album.images %}
-				</div>
-				<div class="card-content white-text">
-					<span class="card-title">{{ album.title }}</span>
-				</div>
-				<div class="card-action">
-					<a href="/albums/{{album.key}}">Go To Album</a>
+<div class="my-gallery">
+	<div class="row">
+		{% for album in site.data.albums %}
+			<div class="col xl3 l4 m6 s12">
+				<div class="my-album-card card my-black lighten-1">
+					<a href="/albums/{{album.key}}">
+						<div class="card-image">
+						<!-- <img src="https://res.cloudinary.com/{{site.cloud_name}}/{{ album.images[0].public_id }}.{{album.images[0].format}}"/> -->
+						{% include cloudinary-collage.html images = album.images %}
+						</div>
+					</a>
+					<div class="card-content white-text">
+						<span class="card-title">{{ album.title }}</span>
+					</div>
+					<div class="card-action my-black lighten-2">
+						<a class="my-light-purple-text text-lighten-2" href="/albums/{{album.key}}">Go To Album</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	{% endfor %}
+		{% endfor %}
+	</div>
 </div>

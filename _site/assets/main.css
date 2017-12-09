@@ -9546,6 +9546,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .my-sm-album-grid {
   display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .my-sm-album-grid .my-col {
   padding-top: 1em;
@@ -9637,6 +9639,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .my-person-container .my-avatar-block img {
     max-width: 90%;
   }
+}
+
+.my-gallery {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.my-album-card .card-action {
+  border: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
