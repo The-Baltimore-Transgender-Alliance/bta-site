@@ -21,6 +21,10 @@
 - key: crystal-edmonds-vigil
   weight: 7
 
+- key: tmor-2016
+  title: TMOR 2016
+  weight: 8.5
+
 - key: rally-for-trans-students
   weight: 8
 
