@@ -9645,6 +9645,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media only screen and (max-width: 600px) {
+  .my-gallery .col:nth-child(1n+1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .my-gallery .col:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 993) and (max-width: 1200) {
+  .my-gallery .col:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .my-gallery .col:nth-child(4n+1) {
+    clear: left;
+  }
+}
 
 .my-album-card .card-action {
   border: 0;

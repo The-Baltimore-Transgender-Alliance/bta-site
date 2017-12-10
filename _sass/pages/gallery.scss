@@ -1,6 +1,28 @@
 .my-gallery {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+
+	// clear every nth row
+	@media #{$small-and-down}{
+		.col:nth-child(1n+1) {
+			clear: left;
+		}
+	}
+	@media #{$medium-only}{
+		.col:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+	@media only screen and (min-width : 993) and (max-width : 1200) {
+		.col:nth-child(3n+1) {
+			clear: left;
+		}
+	}
+	@media #{$extra-large-and-up} {
+		.col:nth-child(4n+1) {
+			clear: left;
+		}
+	}
 }
 
 .my-album-card .card-action {
