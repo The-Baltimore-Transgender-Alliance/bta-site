@@ -1,12 +1,22 @@
-.post-header h1.post-title {
-		font-size: 2.8em;
-		font-weight: 800;
-}
-.post-header time {
-		color: #cacaca;
-		font-size: 0.9em;
-}
+.my-post {
+	.post-header h1.post-title {
+			font-size: 2.8em;
+			font-weight: 800;
+	}
+	.post-header time {
+			color: #cacaca;
+			font-size: 0.9em;
+	}
 
-.post-content {
-	font-size: 16px;
+	.post-content {
+		font-size: 16px;
+	}
+
+	.post-meta span time, a {
+		color: inherit !important;
+	}
+
+	.post-meta a {
+		text-decoration: underline;
+	}
 }

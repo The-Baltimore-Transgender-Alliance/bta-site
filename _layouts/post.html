@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% assign person = site.people | where_exp:"person","person.shortname == page.author" | first %}
 {% if page.cloudinary_image %}
 	<div class="parallax-container">
 		<div class="parallax">
@@ -10,28 +10,41 @@ layout: default
 	</div>
 {% endif %}
 
-<div class="container">
+<div class="container my-post">
 	<div class="section">
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
 			<header class="post-header">
 				<h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 				<p class="post-meta">
-					<time class="my-light-blue-text text-lighten-2" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ page.date | date: date_format }}</time>
+					{% if page.date %}
+						<span class="my-light-blue-text text-lighten-2">
+							<i class="mdi mdi-calendar"></i>
+							<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ page.date | date: date_format }}</time>
+						</span>
+					{% endif %}
 					{% if page.author %}
-						 // <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-							 <span itemprop="name">{{ page.author }}</span>
+						&nbsp;
+						<span class="my-light-pink-text text-lighten-2" itemprop="author" itemscope itemtype="http://schema.org/Person">
+							<i class="mdi mdi-account"></i>
+							{% if person %}
+								<span itemprop="name"><a href="{{person.url}}">{{ person.name }}</a></span>
+							{% else %}
+								<span itemprop="name">{{ page.author }}</span>
+							{% endif %}
 						 </span>
 					{% endif %}
+					{% if page.tags != "" %}
+						&nbsp;
+						<span class="my-light-purple-text text-lighten-2" itemprop ="keywords" itemscope itemtype="http://schema.org/keywords">
+							<i class="mdi mdi-tag"></i>
+							{% for tag in page.tags %}
+								{% capture tag_name %}{{ tag }}{% endcapture %}
+								<a href="/tag/{{ tag_name }}">{{ tag_name }}</a>
+								{% unless forloop.last %},&nbsp;{% endunless %}
+							{% endfor %}
+						</span>
+					{% endif %}
 				</p>
-				{% if page.tags != "" %}
-					<span>
-						{% for tag in page.tags %}
-							{% capture tag_name %}{{ tag }}{% endcapture %}
-							<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-						{% endfor %}
-					</span>
-				{% endif %}
 			</header>
 
 			<div class="post-content my-black-text text-lighten-2" itemprop="articleBody">

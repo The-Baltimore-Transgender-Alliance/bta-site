@@ -9322,18 +9322,22 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 0 15px;
 }
 
-.post-header h1.post-title {
+.my-post .post-header h1.post-title {
   font-size: 2.8em;
   font-weight: 800;
 }
-
-.post-header time {
+.my-post .post-header time {
   color: #cacaca;
   font-size: 0.9em;
 }
-
-.post-content {
+.my-post .post-content {
   font-size: 16px;
+}
+.my-post .post-meta span time, .my-post a {
+  color: inherit !important;
+}
+.my-post .post-meta a {
+  text-decoration: underline;
 }
 
 .my-about-parallax {
