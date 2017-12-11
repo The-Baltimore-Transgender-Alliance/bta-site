@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: org
 name: Sistas of the "t"
-facebook: www.facebook.com/SistasOfThet/
+facebook: http://www.facebook.com/SistasOfThet/
 shortname: sistasofthet
 member_org: YES
+team_member: monica
 cloudinary_image: orgs/sistasofthet.png
 ---
 

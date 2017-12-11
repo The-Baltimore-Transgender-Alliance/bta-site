@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: org
 name: Black Trans Advocacy, Maryland/ DC
-facebook: www.facebook.com/blacktransmaryland/
+facebook: http://www.facebook.com/blacktransmaryland/
 shortname: blacktransadvocacy
 member_org: NO
 ---

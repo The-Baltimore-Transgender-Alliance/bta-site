@@ -1,0 +1,60 @@
+.my-org-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	.my-avatar-block img {
+		border-radius: 50% !important;
+		max-width: 60%;
+		// padding: 12px;
+		width: 100%;
+	}
+
+	.my-text-block {
+		flex-grow: 1;
+	}
+
+	.my-text-block .my-info {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 26px;
+	}
+
+	@media #{$small-and-down} {
+		flex-wrap: wrap; // this just applies to my-about-container
+		.my-avatar-block {
+			flex-basis: percentage(12/12);
+		}
+		.my-avatar-block img {
+			max-width: 60%;
+		}
+	}
+
+	@media #{$medium-only} {
+		.my-avatar-block {
+			flex-basis: percentage(4/12);
+		}
+		.my-avatar-block img {
+			max-width: 80%;
+		}
+	}
+
+	@media #{$large-and-up} {
+		.my-avatar-block {
+			flex-basis: percentage(3/12);
+		}
+		.my-avatar-block img {
+			max-width: 80%;
+		}
+	}
+
+	@media #{$extra-large-and-up} {
+		.my-avatar-block {
+			flex-basis: percentage(2/12);
+		}
+		.my-avatar-block img {
+			max-width: 90%;
+		}
+	}
+}

@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: org
 name: Black Transmen Inc.
-website: www.blacktransmen.org
-facebook: www.facebook.com/blackties
+website: http://www.blacktransmen.org
+facebook: http://www.facebook.com/blackties
 shortname: blacktransmen
 member_org: YES
+team_member: ken
 cloudinary_image: orgs/blacktransmen.png
 ---
 

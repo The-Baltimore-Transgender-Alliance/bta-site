@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% include top-nav.html title=page.name %}
+{% assign team_member = site.people | where_exp:"person","person.shortname == page.team_member" | first %}
+
+<div class="container">
+	<div class="section">
+		<div class="my-org-container">
+			{% if page.cloudinary_image %}
+				<div class="my-avatar-block">
+					<img class="my-bg darken-1" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_400,h_400,c_pad,b_auto:border/{{ page.cloudinary_image }}"/>
+				</div>
+			{% endif %}
+			<div class="my-text-block">
+				{% if page.team_member and team_member %}<div class="my-info my-member"><i class="mdi mdi-account"></i> Team Member: <a href="{{team_member.url}}"> {{ team_member.name }}</a></div>{% endif %}
+				{% if page.website %}<div class="my-info my-website"><i class="mdi mdi-web"></i><a href="{{page.website}}"> {{ page.website }}</a></div>{% endif %}
+				{% if page.email %}<div class="my-info my-email"><i class="mdi mdi-email"></i><a href="mailto:{{ page.email }}"> {{ page.email }}</a></div>{% endif %}
+				{% if page.facebook %}<div class="my-info my-facebook"><i class="mdi mdi-facebook-box"></i><a href="{{page.facebook}}"> {{ page.facebook }}</a></div>{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		{{ content }}
+	</div>
+
+</div>

@@ -9670,6 +9670,65 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   border: 0;
 }
 
+.my-org-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.my-org-container .my-avatar-block img {
+  border-radius: 50% !important;
+  max-width: 60%;
+  width: 100%;
+}
+.my-org-container .my-text-block {
+  flex-grow: 1;
+}
+.my-org-container .my-text-block .my-info {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+@media only screen and (max-width: 600px) {
+  .my-org-container {
+    flex-wrap: wrap;
+  }
+  .my-org-container .my-avatar-block {
+    flex-basis: 100%;
+  }
+  .my-org-container .my-avatar-block img {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .my-org-container .my-avatar-block {
+    flex-basis: 33.3333333333%;
+  }
+  .my-org-container .my-avatar-block img {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .my-org-container .my-avatar-block {
+    flex-basis: 25%;
+  }
+  .my-org-container .my-avatar-block img {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .my-org-container .my-avatar-block {
+    flex-basis: 16.6666666667%;
+  }
+  .my-org-container .my-avatar-block img {
+    max-width: 90%;
+  }
+}
+
+.my-authors-container .my-title h4 a {
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
 }

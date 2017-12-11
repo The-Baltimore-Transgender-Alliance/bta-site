@@ -5,15 +5,24 @@ permalink: /blog/authors
 ---
 {% comment %} Collecting Posts by Authors {% endcomment %}
 {% assign posts_by_author = site.posts | group_by:"author" %}
-
-{% for author in posts_by_author %}
-	<h4 id="{{author.name}}">{{ author.name }}</h4>
-	<div class="divider"></div>
-	<div class="section">
-		<ul>
-			{% for post in author.items %}
-				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-{% endfor %}
+<div class="my-authors-container">
+	{% for author in posts_by_author %}
+		{% assign person = site.people | where_exp:"person","author.name == person.shortname" | first %}
+		<div class="my-title">
+			<h4 id="{{author.name}}">
+				{% if person %}<a class="my-light-purple-text text-lighten-2" href="{{person.url}}">{{person.name}}</a>
+				{% else %}{{ author.name }}
+				{% endif %}
+			</h4>
+		</div>
+		<div class="divider"></div>
+		<div class="section">
+			<ul>
+				{% for post in author.items %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+			{%if person %}{% endif %}
+		</div>
+	{% endfor %}
+</div>

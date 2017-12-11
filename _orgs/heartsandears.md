@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: org
 name: Hearts and Ears
-website: www.heartsandears.org
-facebook: www.facebook.com/HeartsAndEars/
+website: http://www.heartsandears.org
+facebook: http://www.facebook.com/HeartsAndEars/
 shortname: heartsandears
+team_member: ken
 member_org: NO
 ---
 

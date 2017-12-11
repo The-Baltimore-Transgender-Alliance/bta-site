@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: org
 name: Trans Baltimore
 shortname: transbaltimore
 member_org: YES
+team_member: keyayshia
 cloudinary_image: orgs/transbaltimore.png
 ---
 

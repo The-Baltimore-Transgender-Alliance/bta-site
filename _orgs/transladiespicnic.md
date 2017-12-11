@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: org
 name: Baltimore Trans Ladies' Picnic
-facebook: www.facebook.com/bmoretlp
+facebook: http://www.facebook.com/bmoretlp
 email: transladiespicnic@bmoretransalliance.com
 shortname: transladiespicnic
 member_org: YES
+team_member: evan
 cloudinary_image: orgs/transladiespicnic.png
 ---
 

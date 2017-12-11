@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: org
 name: TransYnc Inc.
 shortname: transync
+team_member: keyayshia
 member_org: YES
 ---
 
