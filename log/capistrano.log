@@ -1975,3 +1975,94 @@ and the repository exists.
   INFO [293e998b] Running /usr/bin/env echo "Branch master (at 08b7c88b9b2b62c68197601b361463120f55ee5e) deployed as release 20171210171705 by poco" >> /var/www/bmoretransalliance.com/revisions.log as elm@138.197.45.63
  DEBUG [293e998b] Command: cd /var/www/bmoretransalliance.com/releases && /usr/bin/env echo "Branch master (at 08b7c88b9b2b62c68197601b361463120f55ee5e) deployed as release 20171210171705 by poco" >> /var/www/bmoretransalliance.com/revisions.log
   INFO [293e998b] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-10 19:28:40 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fa8289c6] Running /usr/bin/env mkdir -p /tmp as elm@138.197.45.63
+ DEBUG [fa8289c6] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fa8289c6] Finished in 0.910 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bta-site-production-poco.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bta-site-production-poco.sh 100.0%
+  INFO [81a7ebb4] Running /usr/bin/env chmod 700 /tmp/git-ssh-bta-site-production-poco.sh as elm@138.197.45.63
+ DEBUG [81a7ebb4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-bta-site-production-poco.sh
+  INFO [81a7ebb4] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [06f36ec1] Running /usr/bin/env git ls-remote git@github.com:The-Baltimore-Transgender-Alliance/bta-site.git HEAD as elm@138.197.45.63
+ DEBUG [06f36ec1] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bta-site-production-poco.sh" ; /usr/bin/env git ls-remote git@github.com:The-Baltimore-Transgender-Alliance/bta-site.git HEAD )
+ DEBUG [06f36ec1] 	24f99e1252225e265ae777ace5dd5c2342001357	HEAD
+  INFO [06f36ec1] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO [3b6eea3f] Running /usr/bin/env mkdir -p /var/www/bmoretransalliance.com/shared /var/www/bmoretransalliance.com/releases as elm@138.197.45.63
+ DEBUG [3b6eea3f] Command: /usr/bin/env mkdir -p /var/www/bmoretransalliance.com/shared /var/www/bmoretransalliance.com/releases
+  INFO [3b6eea3f] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [26a1265a] Running [ -f /var/www/bmoretransalliance.com/current/REVISION ] as elm@138.197.45.63
+ DEBUG [26a1265a] Command: [ -f /var/www/bmoretransalliance.com/current/REVISION ]
+ DEBUG [26a1265a] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [076d7a15] Running /usr/bin/env cat /var/www/bmoretransalliance.com/current/REVISION 2>/dev/null as elm@138.197.45.63
+ DEBUG [076d7a15] Command: /usr/bin/env cat /var/www/bmoretransalliance.com/current/REVISION 2>/dev/null
+ DEBUG [076d7a15] 	08b7c88b9b2b62c68197601b361463120f55ee5e
+ DEBUG [076d7a15] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [8df01a88] Running [ -f /var/www/bmoretransalliance.com/repo/HEAD ] as elm@138.197.45.63
+ DEBUG [8df01a88] Command: [ -f /var/www/bmoretransalliance.com/repo/HEAD ]
+ DEBUG [8df01a88] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/bmoretransalliance.com/repo
+ DEBUG [d40c614a] Running if test ! -d /var/www/bmoretransalliance.com/repo; then echo "Directory does not exist '/var/www/bmoretransalliance.com/repo'" 1>&2; false; fi as elm@138.197.45.63
+ DEBUG [d40c614a] Command: if test ! -d /var/www/bmoretransalliance.com/repo; then echo "Directory does not exist '/var/www/bmoretransalliance.com/repo'" 1>&2; false; fi
+ DEBUG [d40c614a] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [64709297] Running /usr/bin/env git remote set-url origin git@github.com:The-Baltimore-Transgender-Alliance/bta-site.git as elm@138.197.45.63
+ DEBUG [64709297] Command: cd /var/www/bmoretransalliance.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bta-site-production-poco.sh" ; /usr/bin/env git remote set-url origin git@github.com:The-Baltimore-Transgender-Alliance/bta-site.git )
+  INFO [64709297] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [337ca105] Running /usr/bin/env git remote update --prune as elm@138.197.45.63
+ DEBUG [337ca105] Command: cd /var/www/bmoretransalliance.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bta-site-production-poco.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [337ca105] 	Fetching origin
+ DEBUG [337ca105] 	From github.com:The-Baltimore-Transgender-Alliance/bta-site
+   08b7c88..24f99e1  master     -> master
+  INFO [337ca105] Finished in 1.058 seconds with exit status 0 (successful).
+ DEBUG [ba320ee7] Running if test ! -d /var/www/bmoretransalliance.com/repo; then echo "Directory does not exist '/var/www/bmoretransalliance.com/repo'" 1>&2; false; fi as elm@138.197.45.63
+ DEBUG [ba320ee7] Command: if test ! -d /var/www/bmoretransalliance.com/repo; then echo "Directory does not exist '/var/www/bmoretransalliance.com/repo'" 1>&2; false; fi
+ DEBUG [ba320ee7] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [8797572c] Running /usr/bin/env mkdir -p /var/www/bmoretransalliance.com/releases/20171211002843 as elm@138.197.45.63
+ DEBUG [8797572c] Command: cd /var/www/bmoretransalliance.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bta-site-production-poco.sh" ; /usr/bin/env mkdir -p /var/www/bmoretransalliance.com/releases/20171211002843 )
+  INFO [8797572c] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [f1ad4a16] Running /usr/bin/env git archive master _site | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/bmoretransalliance.com/releases/20171211002843 as elm@138.197.45.63
+ DEBUG [f1ad4a16] Command: cd /var/www/bmoretransalliance.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bta-site-production-poco.sh" ; /usr/bin/env git archive master _site | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/bmoretransalliance.com/releases/20171211002843 )
+  INFO [f1ad4a16] Finished in 0.229 seconds with exit status 0 (successful).
+ DEBUG [bcf3cfcb] Running if test ! -d /var/www/bmoretransalliance.com/repo; then echo "Directory does not exist '/var/www/bmoretransalliance.com/repo'" 1>&2; false; fi as elm@138.197.45.63
+ DEBUG [bcf3cfcb] Command: if test ! -d /var/www/bmoretransalliance.com/repo; then echo "Directory does not exist '/var/www/bmoretransalliance.com/repo'" 1>&2; false; fi
+ DEBUG [bcf3cfcb] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [7afef04d] Running /usr/bin/env git rev-list --max-count=1 master as elm@138.197.45.63
+ DEBUG [7afef04d] Command: cd /var/www/bmoretransalliance.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bta-site-production-poco.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [7afef04d] 	24f99e1252225e265ae777ace5dd5c2342001357
+ DEBUG [7afef04d] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [38d69bbf] Running if test ! -d /var/www/bmoretransalliance.com/releases/20171211002843; then echo "Directory does not exist '/var/www/bmoretransalliance.com/releases/20171211002843'" 1>&2; false; fi as elm@138.197.45.63
+ DEBUG [38d69bbf] Command: if test ! -d /var/www/bmoretransalliance.com/releases/20171211002843; then echo "Directory does not exist '/var/www/bmoretransalliance.com/releases/20171211002843'" 1>&2; false; fi
+ DEBUG [38d69bbf] Finished in 0.603 seconds with exit status 0 (successful).
+  INFO [98254c6e] Running /usr/bin/env echo "24f99e1252225e265ae777ace5dd5c2342001357" >> REVISION as elm@138.197.45.63
+ DEBUG [98254c6e] Command: cd /var/www/bmoretransalliance.com/releases/20171211002843 && /usr/bin/env echo "24f99e1252225e265ae777ace5dd5c2342001357" >> REVISION
+  INFO [98254c6e] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [5260b521] Running /usr/bin/env ln -s /var/www/bmoretransalliance.com/releases/20171211002843 /var/www/bmoretransalliance.com/releases/current as elm@138.197.45.63
+ DEBUG [5260b521] Command: /usr/bin/env ln -s /var/www/bmoretransalliance.com/releases/20171211002843 /var/www/bmoretransalliance.com/releases/current
+  INFO [5260b521] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [4a097262] Running /usr/bin/env mv /var/www/bmoretransalliance.com/releases/current /var/www/bmoretransalliance.com as elm@138.197.45.63
+ DEBUG [4a097262] Command: /usr/bin/env mv /var/www/bmoretransalliance.com/releases/current /var/www/bmoretransalliance.com
+  INFO [4a097262] Finished in 0.160 seconds with exit status 0 (successful).
+ DEBUG [3d1d5306] Running /usr/bin/env ls -x /var/www/bmoretransalliance.com/releases as elm@138.197.45.63
+ DEBUG [3d1d5306] Command: /usr/bin/env ls -x /var/www/bmoretransalliance.com/releases
+ DEBUG [3d1d5306] 	20171126004105	20171127175420	20171209213717	20171209214217	20171210171705
+20171211002843
+ DEBUG [3d1d5306] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 138.197.45.63
+ DEBUG [bb19820a] Running [ -d /var/www/bmoretransalliance.com/current ] as elm@138.197.45.63
+ DEBUG [bb19820a] Command: [ -d /var/www/bmoretransalliance.com/current ]
+ DEBUG [bb19820a] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [b3371445] Running /usr/bin/env readlink /var/www/bmoretransalliance.com/current as elm@138.197.45.63
+ DEBUG [b3371445] Command: /usr/bin/env readlink /var/www/bmoretransalliance.com/current
+ DEBUG [b3371445] 	/var/www/bmoretransalliance.com/releases/20171211002843
+ DEBUG [b3371445] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [72d7935e] Running /usr/bin/env rm -rf /var/www/bmoretransalliance.com/releases/20171126004105 as elm@138.197.45.63
+ DEBUG [72d7935e] Command: /usr/bin/env rm -rf /var/www/bmoretransalliance.com/releases/20171126004105
+  INFO [72d7935e] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [a848baa9] Running if test ! -d /var/www/bmoretransalliance.com/releases; then echo "Directory does not exist '/var/www/bmoretransalliance.com/releases'" 1>&2; false; fi as elm@138.197.45.63
+ DEBUG [a848baa9] Command: if test ! -d /var/www/bmoretransalliance.com/releases; then echo "Directory does not exist '/var/www/bmoretransalliance.com/releases'" 1>&2; false; fi
+ DEBUG [a848baa9] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [30444c7a] Running /usr/bin/env echo "Branch master (at 24f99e1252225e265ae777ace5dd5c2342001357) deployed as release 20171211002843 by poco" >> /var/www/bmoretransalliance.com/revisions.log as elm@138.197.45.63
+ DEBUG [30444c7a] Command: cd /var/www/bmoretransalliance.com/releases && /usr/bin/env echo "Branch master (at 24f99e1252225e265ae777ace5dd5c2342001357) deployed as release 20171211002843 by poco" >> /var/www/bmoretransalliance.com/revisions.log
+  INFO [30444c7a] Finished in 0.149 seconds with exit status 0 (successful).
