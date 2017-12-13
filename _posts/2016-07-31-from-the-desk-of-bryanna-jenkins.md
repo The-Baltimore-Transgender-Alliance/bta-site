@@ -1,14 +1,14 @@
 ---
 layout: post
 author: bryana
-tags: news announcements
+tags: ['announcements', 'trans excellence']
 cloudinary_image: posts/from-the-desk-of-bryanna-jenkins.jpg
 ---
 
 From the Desk of Bryanna A. Jenkins:
 
 As of July 29, 2016 I am no longer the Executive Director of The Baltimore Transgender Alliance. I have stepped down so I can relocate to Chicago, IL and attend law school at DePaul University College of Law.
-
+<!--more-->
 BTA was originally founded as TAMMI (TransWomen Against Misrepresentation & Misogyny Inc.) an organization with the dual purpose of being a advocacy group and well as an all Trans Women performing vocal quartet in the Winter of 2014. The vision has always been to create liberation for Trans People by using our talents and gifts to fuel our liberation. Thank you Tüquaè Tu-Tu Tahriqë Blairè Leòn Heather Brooks for being apart of the early stages and planting those seeds.
 
 TAMMI eventually evolved into BTA in the Spring of 2015 as a response to the murder of Baltimore Native Mya Hall by NSA Officers and to include all of the Trans and Gender Non Conforming Community of the Baltimore Metropolitan Area. Our first year in operation was transformative and phenomenal to say the least. I have to thank my leadership team for all of your sacrifices and participation. Monica Stevens Tyler Vile Ken Jiretsu Evan Mahone Words cannot express how humbled I am for your participation in that monumental first year. We cannot the forget the impact of #BaltimoreTransUprising, Community Meeting with SA Marilyn Mosby, Esq., Meeting with The United States Department of Justice, and #BMORETMOR We had some struggles, naysayers, and controversies but in the end we pulled through.

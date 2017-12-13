@@ -1,0 +1,18 @@
+<div id="cwmodal" class="modal modal-fixed-footer my-black lighten-4 white-text">
+	<div class="modal-content">
+		<h2>Content Warning!</h2>
+		<h4>This post has content relating to
+			{% for tag in include.tags %}
+				{% if forloop.last %}
+				and <b>{{ tag}}</b>.
+				{% else %}
+				<b>{{ tag }}</b>,
+				{% endif %}
+			{% endfor %}
+		</h4>
+	</div>
+	<div class="modal-footer my-black lighten-2">
+		<a href="#!" onclick="goBack()" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Go Back</a>
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Proceed</a>
+	</div>
+</div>

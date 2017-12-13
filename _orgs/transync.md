@@ -2,7 +2,7 @@
 layout: org
 name: TransYnc Inc.
 shortname: transync
-team_member: keyayshia
+person: keyayshia
 member_org: YES
 ---
 

@@ -1,15 +1,16 @@
 ---
 layout: post
 author: ava
-tags: trans community
+tags: ['announcements', 'violence', 'transphobia', 'baltimore']
 cloudinary_image: posts/on-chelsea-manning-a.png
 cw: true
-cw-text: transphobia, violence
+cw-tags: ['transphobia', 'violence']
 ---
 
 Family,
-
-Let's talk about the violence against trans bodies in our city. Rest in Power Alphonza Watson. We will not wait for another life to be taken.
+Let's talk about the violence against trans bodies in our city.
+<!--more-->
+Rest in Power Alphonza Watson. We will not wait for another life to be taken.
 
 3 years ago, 3 people showed up in the rain for Mia Henderson's vigil. This year 100 of you stayed for almost an hour and a half for Alphonza. We thank you.
 

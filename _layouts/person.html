@@ -6,23 +6,27 @@ layout: default
 <div class="container">
 	<div class="section">
 		<div class="my-person-container">
-			<div class="my-avatar-block">
-				<img class="my-bg darken-1" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_400,h_400,c_pad,b_auto:border/{{ page.cloudinary_image }}"/>
-			</div>
-			<div class="my-text-block">
-				<div class="my-info my-position"><i class="mdi mdi-account"></i> {{ page.position }}</div>
-				<div class="my-info my-pronouns"><i class="mdi mdi-message"></i> {{ page.pronouns }}</div>
-				<div class="my-info my-phone"><i class="mdi mdi-phone"></i> {{ page.phone }}</div>
-				<div class="my-info my-email"><i class="mdi mdi-email"></i> <a href="mailto:{{ page.email }}"> {{ page.email }}</a></div>
-			</div>
+			{% if page.cloudinary_image %}
+				<div class="my-avatar-block">
+					<img class="my-bg darken-1" src="https://res.cloudinary.com/{{ site.cloud_name }}/w_400,h_400,c_pad,b_auto:border/{{ page.cloudinary_image }}"/>
+				</div>
+			{% endif %}
+			{% if page.position or page.pronouns or page.phone or page.email %}
+				<div class="my-text-block">
+					{% if page.position %}<div class="my-info my-position"><i class="mdi mdi-account"></i> {{ page.position }}</div>{% endif %}
+					{% if page.pronouns %}<div class="my-info my-pronouns"><i class="mdi mdi-message"></i> {{ page.pronouns }}</div>{% endif %}
+					{% if page.phone %}<div class="my-info my-phone"><i class="mdi mdi-phone"></i> {{ page.phone }}</div>{% endif %}
+					{% if page.email %}<div class="my-info my-email"><i class="mdi mdi-email"></i> <a href="mailto:{{ page.email }}"> {{ page.email }}</a></div>{% endif %}
+				</div>
+			{% endif %}
 		</div>
 	</div>
 	<div class="divider"></div>
 	<div class="section">
 		{{ content }}
 	</div>
-
 </div>
+
 {% if posts_by_author.size >= 1 %}
 	<div class="container">
 		<h5>Latest Posts by {{ page.name }}</h5>

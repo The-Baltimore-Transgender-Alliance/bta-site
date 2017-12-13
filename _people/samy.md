@@ -8,6 +8,7 @@ phone: 917-719-6583
 pronouns: He/him/his
 cloudinary_image: people/samy.jpg
 weight: 5
+team: true
 ---
 Samy is an actor, aerialist, pianist, puppeteer, and vocalist. In addition to performing, he also works as the General Manager of the Baltimore Annex Theater; as well as a teaching artist for the Smithsonian Discovery Theater and the Young Playwright's Theater.
 

@@ -2,6 +2,10 @@
 layout: default
 ---
 {% assign person = site.people | where_exp:"person","person.shortname == page.author" | first %}
+{% if page.cw %}
+	{% include cw-modal.html tags = page.cw-tags %}
+{% endif %}
+
 {% if page.cloudinary_image %}
 	<div class="parallax-container">
 		<div class="parallax">
@@ -50,7 +54,19 @@ layout: default
 			<div class="post-content my-black-text text-lighten-2" itemprop="articleBody">
 				{{ content }}
 			</div>
-
 		</article>
 	</div>
+		<div class="divider"></div>
+		<div class="section my-social-share">
+			{% assign full_url = "http://www.bmoretransalliance.com" | append: page.url %}
+			{% assign title = page.title | uri_escape %}
+			{% assign excerpt = page.excerpt | strip_html | uri_escape %}
+
+			<div class="my-btn-container">{% include social-share-btn-facebook.html url=full_url %}</div>
+			<div class="my-btn-container">{% include social-share-btn-twitter.html url=full_url title=title %}</div>
+			<div class="my-btn-container">{% include social-share-btn-google-plus.html url=full_url %}</div>
+			<div class="my-btn-container">{% include social-share-btn-linkedin.html url=full_url title=title %}</div>
+			<div class="my-btn-container">{% include social-share-btn-tumblr.html url=full_url title=title desc=excerpt %}</div>
+		</div>
+
 </div>

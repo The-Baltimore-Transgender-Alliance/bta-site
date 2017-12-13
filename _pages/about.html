@@ -104,8 +104,9 @@ body-color: my-black lighten-2
 	<div class="container">
 		<h1>Our Team</h1>
 	</div>
-	{% assign people_ordered = site.people | sort: 'weight' %}
-	{% for person in people_ordered %}
+	{% assign team = site.people | where_exp: "person", "person.team == true" %}
+	{% assign team_ordered = team | sort: 'weight' %}
+	{% for person in team_ordered %}
 		<div class="my-person my-about-container container">
 			<div class="my-avatar-block">
 				{% if person.cloudinary_image %}

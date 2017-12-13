@@ -4,7 +4,7 @@ name: Sistas of the "t"
 facebook: http://www.facebook.com/SistasOfThet/
 shortname: sistasofthet
 member_org: YES
-team_member: monica
+person: monica
 cloudinary_image: orgs/sistasofthet.png
 ---
 

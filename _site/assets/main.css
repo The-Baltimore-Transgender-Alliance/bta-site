@@ -9313,6 +9313,34 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     max-width: 100%;
   }
 }
+.my-social-share {
+  color: white !important;
+}
+
+.my-social-share .facebook {
+  background-color: #3b5998;
+}
+
+.my-social-share .twitter {
+  background-color: #00aced;
+}
+
+.my-social-share .google-plus {
+  background-color: #d34836;
+}
+
+.my-social-share .linkedin {
+  background-color: #0077B5;
+}
+
+.my-social-share .tumblr {
+  background-color: #35465c;
+}
+
+#cwmodal {
+  height: 60% !important;
+}
+
 .my-home-logo {
   width: 100%;
   height: 100%;
@@ -9333,11 +9361,65 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .my-post .post-content {
   font-size: 16px;
 }
-.my-post .post-meta span time, .my-post a {
+.my-post .post-meta span time, .my-post .post-meta span a {
   color: inherit !important;
 }
 .my-post .post-meta a {
   text-decoration: underline;
+}
+.my-post .my-social-share {
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-post .my-social-share .my-btn-container {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  margin-bottom: 1rem;
+}
+.my-post .my-social-share .my-btn-container .btn, .my-post .my-social-share .my-btn-container .btn-large {
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .my-post .my-social-share .my-btn-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .my-post .my-social-share .my-btn-container {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .my-post .my-social-share .my-btn-container:nth-child(2n+1), .my-post .my-social-share .my-btn-container:nth-child(1) {
+    padding-left: 0;
+  }
+  .my-post .my-social-share .my-btn-container:nth-child(2n) {
+    padding-right: 0;
+  }
+  .my-post .my-social-share .my-btn-container {
+    flex-basis: 50%;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .my-post .my-social-share .my-btn-container:nth-child(3n+1), .my-post .my-social-share .my-btn-container:nth-child(1) {
+    padding-left: 0;
+  }
+  .my-post .my-social-share .my-btn-container:nth-child(3n) {
+    padding-right: 0;
+  }
+  .my-post .my-social-share .my-btn-container {
+    flex-basis: 33.3333333333%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .my-post .my-social-share .my-btn-container:nth-child(4n+1), .my-post .my-social-share .my-btn-container:nth-child(1) {
+    padding-left: 0;
+  }
+  .my-post .my-social-share .my-btn-container:nth-child(4n) {
+    padding-right: 0;
+  }
+  .my-post .my-social-share .my-btn-container {
+    flex-basis: 25%;
+  }
 }
 
 .my-about-parallax {

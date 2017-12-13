@@ -14,7 +14,7 @@
 			<div><i class="mdi mdi-tag"></i> {{ include.post | tags }}</div>
 			<div><i class="mdi mdi-account"></i> <a href="{{author.url}}">{{ author.name }}</a></div>
 			{% if include.post.cw %}
-				<h5>CONTENT WARNING: {{ include.post.cw-text | capitalize }}</h5>
+				<h5>CONTENT WARNING: {{ include.post.cw-tags | capitalize }}</h5>
 			{% else %}
 				<p>{{ include.post.content | truncatewords: 30 }}</p>
 			{% endif %}

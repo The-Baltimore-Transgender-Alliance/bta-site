@@ -1,10 +1,12 @@
 ---
 layout: post
 author: jamie
-tags: trans community
+tags: ['writings', 'trans women', 'transphobia', 'gender']
 cloudinary_image: posts/if-trans-women-arent-real-women-then-nobody-is.jpeg
 ---
-In an age of advancing trans visibility, Many cis women are finding it harder & harder to organize around womanhood. I’m gonna say something that might blow your mind — This is a good thing.
+In an age of advancing trans visibility, Many cis women are finding it harder & harder to organize around womanhood.
+<!--more-->
+I’m gonna say something that might blow your mind — This is a good thing.
 Thinking critically about how we, as individuals, define womanhood is not a bad thing! & if you are bothered by all of a sudden having to think critically about why you hold this identity you are not alone! All Trans women have thought about this.
 So let’s get down to the nitty-gritty: how do we define what it means to be a woman?
 

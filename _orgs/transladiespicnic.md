@@ -5,7 +5,7 @@ facebook: http://www.facebook.com/bmoretlp
 email: transladiespicnic@bmoretransalliance.com
 shortname: transladiespicnic
 member_org: YES
-team_member: evan
+person: evan
 cloudinary_image: orgs/transladiespicnic.png
 ---
 

@@ -1,6 +1,44 @@
 # Bta Website
 
-# Jekyll Materialize Starter Template v0.1
+# Tags
+Here are some suggested tags.
+- community
+- family
+- chosen family
+- trans women
+- trans men
+- transfeminine
+- transmasculine
+- non-binary
+- gender
+- gender euphoria
+- trans excellence
+- transphobia
+- gender expression
+- press releases
+- announcements
+- racial justice
+- TMOR
+- pride
+- queer love
+- healthcare
+- transitioning
+- mental health
+- incarceration
+- violence
+- outreach
+- sex work
+- trans students
+- resisting
+- spirituality
+- baltimore
+- maryland
+- national
+- politics
+-
+
+# Deployment Stuff
+Followed this readme for heroku [link][http://blog.gnclmorais.com/jekyll-heroku-the-simple-way]
 
 *A Site Starter Materialize Templates.
 
@@ -20,6 +58,3 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
 [1]: https://github.com/jekyll/minima
 [2]: https://opensource.org/licenses/MIT
 [3]: http://materializecss.com/
-
-# Deployment Stuff
-Followed this readme for heroku [link][http://blog.gnclmorais.com/jekyll-heroku-the-simple-way]

@@ -12,7 +12,7 @@ address:
  - '3rd Floor - Room 1'
  - 'Baltimore, MD 21218'
 newsletter_text: 'Subscribe to our newsletter to hear about upcoming events:'
-donate_text: "Support Maryland's largest trans autonomous project. Help get trans folks do advocacy work and get payed."
+donate_text: "Support Maryland's largest trans autonomous project. Help trans folks do advocacy work and get payed."
 volunteer_text: "We have lots of opportunities to work towards a common goal with the trans community."
 donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6KVG928CME2
 volunteer_link: https://docs.google.com/forms/d/e/1FAIpQLSe58WnG41jcsu0-8iK8-MWjFViCejos5K1_2vBD1kDteJ4WRQ/viewform?usp=sf_link
@@ -21,10 +21,16 @@ subscribe_list: 3Fv892JXCpb9892OtjEVlPVKoQ
 name_placeholder: Avery Smith
 email_placeholder: avery.smith@example.com
 
+## APP ID's
 cloud_name: bmoretransalliance
+facebook_app_id: 335918906883559
 
+## Social Media
+twitter_user: alliancebmore
 
 ## CONFIGUTATION STUFF ##
+excerpt_separator: <!--more-->
+
 sass:
   style: expanded
   sass_dir: _sass
@@ -44,7 +50,7 @@ exclude:
  - Gemfile
  - Gemfile.lock
 
-# Explicitly turn off the old code
+# Explicitly turn off the old code for pagination
 paginate: nil
 paginate_path: nil
 
@@ -61,8 +67,6 @@ pagination:
    before: 2
    after: 2
 
-fetch_resources_data: true
-
 collections:
   people:
    output: true
@@ -71,5 +75,4 @@ collections:
    output: true
    permalink: /:collection/:slug.html
   projects:
-   name: Example
-   email: example@example.com
+   output: false

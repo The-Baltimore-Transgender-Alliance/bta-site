@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% include top-nav.html title=page.name %}
+{% assign posts_by_author = site.posts | where_exp:"post","post.author == page.shortname" %}
+{% if posts_by_author.size >= 1 %}
+	<div class="container">
+		<h5>Latest Posts by {{ page.name }}</h5>
+	</div>
+	<div class="my-bg darken-2">
+		<div class="container my-latest-posts">
+			{% include latest-posts.html posts=posts_by_author %}
+			<a class="right-align my-light-blue-text" href="/blog/authors#{{ page.shortname }}">View all posts by {{page.name}}...</a>
+		</div>
+		<div class="container">
+
+		</div>
+	</div>
+{% endif %}

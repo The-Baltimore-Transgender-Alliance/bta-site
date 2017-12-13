@@ -2,7 +2,7 @@
 layout: default
 ---
 {% include top-nav.html title=page.name %}
-{% assign team_member = site.people | where_exp:"person","person.shortname == page.team_member" | first %}
+{% assign contact = site.people | where_exp:"person","person.shortname == page.person" | first %}
 
 <div class="container">
 	<div class="section">
@@ -13,7 +13,7 @@ layout: default
 				</div>
 			{% endif %}
 			<div class="my-text-block">
-				{% if page.team_member and team_member %}<div class="my-info my-member"><i class="mdi mdi-account"></i> Team Member: <a href="{{team_member.url}}"> {{ team_member.name }}</a></div>{% endif %}
+				{% if page.person and contact %}<div class="my-info my-member"><i class="mdi mdi-account"></i> Contact: <a href="{{contact.url}}"> {{ contact.name }}</a></div>{% endif %}
 				{% if page.website %}<div class="my-info my-website"><i class="mdi mdi-web"></i><a href="{{page.website}}"> {{ page.website }}</a></div>{% endif %}
 				{% if page.email %}<div class="my-info my-email"><i class="mdi mdi-email"></i><a href="mailto:{{ page.email }}"> {{ page.email }}</a></div>{% endif %}
 				{% if page.facebook %}<div class="my-info my-facebook"><i class="mdi mdi-facebook-box"></i><a href="{{page.facebook}}"> {{ page.facebook }}</a></div>{% endif %}

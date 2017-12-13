@@ -1,11 +1,13 @@
 ---
 layout: post
 author: bta
-tags: news announcements press-releases
+tags: ['press releases', 'healthcare', 'community', 'baltimore']
 cloudinary_image: posts/stop-union-busting-at-chase-brexton.jpg
 ---
 
-On August 19th, the Baltimore Transgender Alliance and our allies are joining forces to rally in support of the Chase Brexton workers’ right to unionize. The rally’s purpose is twofold: both to lift the voices of Chase Brexton employees and the communities that Chase Brexton serves, and to stand united as transgender residents of Baltimore and demand the services we deserve.
+On August 19th, the Baltimore Transgender Alliance and our allies are joining forces to rally in support of the Chase Brexton workers’ right to unionize.
+<!--more-->
+The rally’s purpose is twofold: both to lift the voices of Chase Brexton employees and the communities that Chase Brexton serves, and to stand united as transgender residents of Baltimore and demand the services we deserve.
 
 Chase Brexton is one of the only places where low-income transgender and non-binary people in Maryland can access care. However, for two years, CEO Richard Larison’s policies have undermined worker’s efforts. As we face systemic injustice based on intersections of race, class, gender, and sexuality, we need and deserve quality care.
 

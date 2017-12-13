@@ -1,0 +1,2 @@
+{% assign share_url = "https://twitter.com/intent/tweet?url=" | append: include.url | append: "&text=" | append: include.title | append: "&via=" | append: site.twitter_user | append: "&hashtags=" | append: include.hashtags %}
+<a href={{share_url}} class="btn my-social-share twitter"><i class="mdi mdi-twitter .mdi-18px"></i>&nbsp;Twitter</a>

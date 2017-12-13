@@ -5,5 +5,12 @@
 	$('.carousel').carousel();
 	$('.parallax').parallax();
 	$('.materialboxed').materialbox();
-  }); // end of document ready
+	$('#cwmodal').modal({});
+	$('#cwmodal').modal('open');
+  });
+   // end of document ready
 })(jQuery); // end of jQuery name space
+
+function goBack() {
+	window.history.back();
+}

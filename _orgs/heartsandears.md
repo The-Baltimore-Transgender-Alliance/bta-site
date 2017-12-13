@@ -4,7 +4,7 @@ name: Hearts and Ears
 website: http://www.heartsandears.org
 facebook: http://www.facebook.com/HeartsAndEars/
 shortname: heartsandears
-team_member: ken
+person: ken
 member_org: NO
 ---
 

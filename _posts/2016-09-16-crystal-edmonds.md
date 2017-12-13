@@ -1,13 +1,14 @@
 ---
 layout: post
 author: ava
-tags: news announcements transphobia violence
+tags: ['announcements', 'violence', 'transphobia', 'baltimore']
 cloudinary_image: posts/crystal-edmonds.jpg
 cw: true
-cw-tags: transphobia, violence
+cw-tags: ['transphobia', 'violence']
 ---
 
 Today we hear about another act of violence in our community.
+<!--more-->
 There has been a confirmed shooting of a black transwoman on the 3600 block of Fairview in the northern district of Baltimore City. She is in grave condition. Please keep her in your hearts today.
 
 We will be collecting donations of flowers and cards, as well as funds to purchase these. financial donations for this purpose can come to https://www.paypal.me/avapip (this is a personal paypal for these donations, not for the Balt. Trans Alliance). We will deliver these to the hospital room as the information becomes available.

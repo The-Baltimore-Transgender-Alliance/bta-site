@@ -1,10 +1,12 @@
 ---
 layout: post
 author: jamie
-tags: trans community race
+tags: ['writings', 'racial justice']
 cloudinary_image: posts/transgendered-gentrification.jpg
 ---
-On the bus going south into the city I get reminded over & over that I am trans. First, as I’m hurriedly walking to the stop I’m asked if I “need a ride”; he licks his lips before I say no. I wave the bus & when I get on board I feel eyes follow me. I put in my other headphone. A couple minutes pass & the girl behind me asks “are you transitioning?”
+On the bus going south into the city I get reminded over & over that I am trans.
+<!--more-->
+First, as I’m hurriedly walking to the stop I’m asked if I “need a ride”; he licks his lips before I say no. I wave the bus & when I get on board I feel eyes follow me. I put in my other headphone. A couple minutes pass & the girl behind me asks “are you transitioning?”
 
 Most of these interactions are well intentioned, but they are nonetheless manifestations of my larger fears. — That someone would see me as a disruption; that someone would take away my ability to take up space.
 

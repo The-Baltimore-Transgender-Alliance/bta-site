@@ -5,7 +5,7 @@ website: http://www.blacktransmen.org
 facebook: http://www.facebook.com/blackties
 shortname: blacktransmen
 member_org: YES
-team_member: ken
+person: ken
 cloudinary_image: orgs/blacktransmen.png
 ---
 

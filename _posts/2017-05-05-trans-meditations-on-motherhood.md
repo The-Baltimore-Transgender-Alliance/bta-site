@@ -1,11 +1,13 @@
 ---
 layout: post
 author: jamie
-tags: writings family community
+tags: ['writings', 'trans women', 'family']
 cloudinary_image: posts/trans-meditations-on-motherhood.jpeg
 ---
 
-Yesterday was Mother’s day & it will come as no surprise that I, like many other trans women, have complex feelings about motherhood. — Yes, I can be a woman in so many ways, but on some level I know that my femininity will always be undermined because of my inability to bear children.
+Yesterday was Mother’s day & it will come as no surprise that I, like many other trans women, have complex feelings about motherhood.
+<!--more-->
+ — Yes, I can be a woman in so many ways, but on some level I know that my femininity will always be undermined because of my inability to bear children.
 Converstions about motherhood are plagued with a puritanical comparison between infertility & ‘lack of purpose’; women who cannot conceive are called “barren”, “sterile”, & even “monster” (see example: Avengers: Age of Ultron)
 The inability to bear children carries with it a host of other meanings; & in some ways, the examples above suggest that childbearing has been gatekept as a validation of a sort of ‘potential energy’. Earth is treated like dirt if it cannot bear crops.
 It is this ‘potential energy’, & its inability to realized, that plague me as a trans woman. If I am barren like the soil then how can I denounce the claims that I am ‘unnatural’? — that I am this way because of what someone else’s seed stole from me? — that I am biologically purposeless?
