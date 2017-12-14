@@ -4,7 +4,6 @@ require 'json'
 require 'yaml'
 require 'active_support/core_ext/string'
 require_relative 'imagegrid'
-require 'pp'
 
 module Gallery
 	@@lrg_grid_w = 12

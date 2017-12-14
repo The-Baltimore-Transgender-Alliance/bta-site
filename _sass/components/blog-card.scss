@@ -1,0 +1,25 @@
+.my-blog-card {
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		.my-tags {
+			margin-top: auto;
+		}
+	}
+	.card-image {
+		display: flex;
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: center !important;
+		overflow: hidden !important;
+		width: 200px !important;
+		img {
+			width: auto;
+			flex-shrink:0;
+			max-width: none !important;
+			min-height:100% !important;
+			min-width: 100% !important;
+		}
+	}
+
+}

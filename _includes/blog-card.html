@@ -1,0 +1,42 @@
+{% assign date_format = site.minima.date_format | default: "%m/%d" %}
+{% assign author = site.people | where_exp:"person", "person.shortname == include.post.author" | first %}
+
+<div class="my-blog-card card horizontal my-light-pink lighten-5">
+	{% if include.post.cloudinary_image %}
+		<div class="card-image hide-on-small-only">
+			<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_200,h_300,c_fill/w_200,h_300,c_crop/{{ include.post.cloudinary_image }}"/>
+		</div>
+	{% endif %}
+	<div class="card-stacked">
+		<div class="card-content">
+			<span class="card-title black-text"> {{ include.post.title }}</span>
+			<div>
+				<span class="date-post my-pink-text text-lighten-4"><i class="mdi mdi-calendar"></i> {{ include.post.date | date: date_format }}</span>
+				<a class="my-author my-pink-text text-lighten-4" href="{{author.url}}"><i class="mdi mdi-account"></i> {{ author.name }}</a>
+			</div>
+
+			<div class="section my-content black-text">
+				{% if include.post.cw %}
+					<h5>CONTENT WARNING: {{ include.post.cw-tags | capitalize }}</h5>
+				{% else %}
+					{{ include.post.excerpt }}
+				{% endif %}
+			</div>
+
+			<div class="my-tags">
+				{% for t in post.tags %}
+					<a href="/tag/{{t |  slugify: 'pretty'}}"><div class="chip my-tag my-light-pink lighten-4">
+						{{t}}
+					</div></a>
+				{% endfor %}
+			</div>
+						<!-- <div><i class="mdi mdi-tag"></i> {{ include.post | tags }}</div> -->
+		</div>
+		<div class="card-action">
+						<div> </div>
+			<a href="{{ include.post.url | relative_url }}" class="my-pink-text text-lighten-4">
+				Read More...<i class="mdi mdi-chevron-right"></i>
+			</a>
+		</div>
+	</div>
+</div>

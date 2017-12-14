@@ -9341,6 +9341,29 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 60% !important;
 }
 
+.my-blog-card .card-content {
+  display: flex;
+  flex-direction: column;
+}
+.my-blog-card .card-content .my-tags {
+  margin-top: auto;
+}
+.my-blog-card .card-image {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  width: 200px !important;
+}
+.my-blog-card .card-image img {
+  width: auto;
+  flex-shrink: 0;
+  max-width: none !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+}
+
 .my-home-logo {
   width: 100%;
   height: 100%;

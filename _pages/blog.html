@@ -12,7 +12,7 @@ pagination:
 <div class="section">
 	<div class="row">
 		<div class="my-blog-container col s12 m9 l9 xl9">
-			{% for post in paginator.posts %} {% include blog-post.html post=post %} {% endfor %}
+			{% for post in paginator.posts %} {% include blog-card.html post=post %} {% endfor %}
 			<div class="center-align">
 				{% include paginator-nav.html paginator=paginator %}
 			</div>
