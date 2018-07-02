@@ -1,1 +1,1 @@
-We must empower ourselves.
+We must empower ourselves
